@@ -58,11 +58,11 @@
             // 
             this.bunifuProgressBar1.BackColor = System.Drawing.Color.Silver;
             this.bunifuProgressBar1.BorderRadius = 5;
-            this.bunifuProgressBar1.Location = new System.Drawing.Point(1, 381);
+            this.bunifuProgressBar1.Location = new System.Drawing.Point(4, 380);
             this.bunifuProgressBar1.MaximumValue = 100;
             this.bunifuProgressBar1.Name = "bunifuProgressBar1";
             this.bunifuProgressBar1.ProgressColor = System.Drawing.Color.Teal;
-            this.bunifuProgressBar1.Size = new System.Drawing.Size(797, 10);
+            this.bunifuProgressBar1.Size = new System.Drawing.Size(793, 10);
             this.bunifuProgressBar1.TabIndex = 2;
             this.bunifuProgressBar1.Value = 0;
             // 
