@@ -55,7 +55,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::DairyFarmTask.Properties.Resources.icons8_cow_breed_80;
+            this.pictureBox1.Image = global::DairyFarmTask.Properties.Resources.icons8_cow_breed_161;
             this.pictureBox1.Location = new System.Drawing.Point(467, 100);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(130, 83);
