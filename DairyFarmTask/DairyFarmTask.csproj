@@ -68,6 +68,8 @@
     <Compile Include="CowHealth.Designer.cs">
       <DependentUpon>CowHealth.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="ItemController.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
