@@ -83,9 +83,79 @@ namespace DairyFarmTask.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_cow_breed_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-cow-breed-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_cow_breed_80 {
             get {
                 object obj = ResourceManager.GetObject("icons8-cow-breed-80", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_cow_udder_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-cow-udder-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_dashboard_layout_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-dashboard-layout-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_discount_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-discount-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_heart_with_dog_paw_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-heart-with-dog-paw-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_milk_carton_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-milk-carton-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_total_sales_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-total-sales-64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
