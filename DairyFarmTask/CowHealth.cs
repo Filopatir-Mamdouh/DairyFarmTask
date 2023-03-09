@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace DairyFarmTask
 {
-    public partial class Form1 : Form
+    public partial class CowHealth : Form
     {
-        public Form1()
+        public CowHealth()
         {
             InitializeComponent();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
