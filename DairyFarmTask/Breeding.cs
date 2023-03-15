@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DairyFarmTask
 {
-    public partial class Breedimh : Form
+    public partial class Breeding : Form
     {
-        public Breedimh()
+        public Breeding()
         {
             InitializeComponent();
         }
