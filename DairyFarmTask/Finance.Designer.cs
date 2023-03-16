@@ -82,6 +82,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.bunifuDatepicker3 = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.label21 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -533,10 +535,10 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(241, 49);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(354, 49);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(904, 367);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(713, 367);
             this.guna2DataGridView1.TabIndex = 153;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -562,6 +564,8 @@
             // 
             // panel9
             // 
+            this.panel9.Controls.Add(this.bunifuDatepicker3);
+            this.panel9.Controls.Add(this.label21);
             this.panel9.Controls.Add(this.guna2DataGridView2);
             this.panel9.Controls.Add(this.label8);
             this.panel9.Controls.Add(this.label9);
@@ -600,10 +604,10 @@
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.guna2DataGridView2.DefaultCellStyle = dataGridViewCellStyle6;
             this.guna2DataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView2.Location = new System.Drawing.Point(239, 66);
+            this.guna2DataGridView2.Location = new System.Drawing.Point(239, 80);
             this.guna2DataGridView2.Name = "guna2DataGridView2";
             this.guna2DataGridView2.RowHeadersVisible = false;
-            this.guna2DataGridView2.Size = new System.Drawing.Size(904, 367);
+            this.guna2DataGridView2.Size = new System.Drawing.Size(904, 353);
             this.guna2DataGridView2.TabIndex = 153;
             this.guna2DataGridView2.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView2.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -738,6 +742,31 @@
             this.label20.TabIndex = 29;
             this.label20.Text = "Income List";
             // 
+            // bunifuDatepicker3
+            // 
+            this.bunifuDatepicker3.BackColor = System.Drawing.Color.DarkGray;
+            this.bunifuDatepicker3.BorderRadius = 0;
+            this.bunifuDatepicker3.ForeColor = System.Drawing.Color.White;
+            this.bunifuDatepicker3.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.bunifuDatepicker3.FormatCustom = null;
+            this.bunifuDatepicker3.Location = new System.Drawing.Point(642, 47);
+            this.bunifuDatepicker3.Name = "bunifuDatepicker3";
+            this.bunifuDatepicker3.Size = new System.Drawing.Size(191, 27);
+            this.bunifuDatepicker3.TabIndex = 155;
+            this.bunifuDatepicker3.Value = new System.DateTime(2023, 3, 9, 5, 32, 14, 536);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.SystemColors.Control;
+            this.label21.Font = new System.Drawing.Font("Andalus", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label21.Location = new System.Drawing.Point(569, 47);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(59, 30);
+            this.label21.TabIndex = 154;
+            this.label21.Text = "Filter";
+            // 
             // Finance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -835,5 +864,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label20;
+        private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker3;
+        private System.Windows.Forms.Label label21;
     }
 }
