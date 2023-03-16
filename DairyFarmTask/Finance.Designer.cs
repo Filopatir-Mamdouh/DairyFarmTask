@@ -398,6 +398,7 @@
             // 
             // panel8
             // 
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.guna2DataGridView1);
             this.panel8.Controls.Add(this.label13);
             this.panel8.Controls.Add(this.label10);
@@ -538,7 +539,7 @@
             this.guna2DataGridView1.Location = new System.Drawing.Point(354, 49);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(713, 367);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(713, 356);
             this.guna2DataGridView1.TabIndex = 153;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -564,6 +565,7 @@
             // 
             // panel9
             // 
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.bunifuDatepicker3);
             this.panel9.Controls.Add(this.label21);
             this.panel9.Controls.Add(this.guna2DataGridView2);
@@ -607,7 +609,7 @@
             this.guna2DataGridView2.Location = new System.Drawing.Point(239, 80);
             this.guna2DataGridView2.Name = "guna2DataGridView2";
             this.guna2DataGridView2.RowHeadersVisible = false;
-            this.guna2DataGridView2.Size = new System.Drawing.Size(904, 353);
+            this.guna2DataGridView2.Size = new System.Drawing.Size(894, 353);
             this.guna2DataGridView2.TabIndex = 153;
             this.guna2DataGridView2.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView2.ThemeStyle.AlternatingRowsStyle.Font = null;
