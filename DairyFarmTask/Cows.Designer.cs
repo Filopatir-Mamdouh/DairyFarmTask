@@ -28,12 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label19 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
@@ -55,30 +72,11 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label19 = new System.Windows.Forms.Label();
             this.bunifuMaterialTextbox5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.guna2GradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -86,6 +84,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.guna2GradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -112,6 +112,36 @@
             this.panel1.Size = new System.Drawing.Size(318, 983);
             this.panel1.TabIndex = 1;
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::DairyFarmTask.Properties.Resources.icons8_cow_breed_161;
+            this.pictureBox8.Location = new System.Drawing.Point(80, 12);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(151, 120);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 23;
+            this.pictureBox8.TabStop = false;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Gabriola", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(25, 147);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(277, 68);
+            this.label18.TabIndex = 22;
+            this.label18.Text = "Dairy Farm Software";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Location = new System.Drawing.Point(12, 253);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(290, 58);
+            this.panel2.TabIndex = 21;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -123,6 +153,143 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "Cows";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DairyFarmTask.Properties.Resources.icons8_cow_breed_64;
+            this.pictureBox1.Location = new System.Drawing.Point(2, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(85, 51);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::DairyFarmTask.Properties.Resources.icons8_dashboard_layout_48;
+            this.pictureBox7.Location = new System.Drawing.Point(12, 854);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(85, 51);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 20;
+            this.pictureBox7.TabStop = false;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.Control;
+            this.label17.Location = new System.Drawing.Point(103, 863);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(138, 32);
+            this.label17.TabIndex = 19;
+            this.label17.Text = "Dashboard";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::DairyFarmTask.Properties.Resources.icons8_total_sales_64;
+            this.pictureBox6.Location = new System.Drawing.Point(12, 748);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(85, 51);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 18;
+            this.pictureBox6.TabStop = false;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.Control;
+            this.label16.Location = new System.Drawing.Point(103, 757);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(101, 32);
+            this.label16.TabIndex = 17;
+            this.label16.Text = "Finance";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::DairyFarmTask.Properties.Resources.icons8_discount_50;
+            this.pictureBox5.Location = new System.Drawing.Point(12, 644);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(85, 51);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 16;
+            this.pictureBox5.TabStop = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.Control;
+            this.label15.Location = new System.Drawing.Point(103, 653);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(128, 32);
+            this.label15.TabIndex = 15;
+            this.label15.Text = "Milk Sales";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::DairyFarmTask.Properties.Resources.icons8_cow_udder_96;
+            this.pictureBox4.Location = new System.Drawing.Point(12, 543);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(85, 51);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.Control;
+            this.label14.Location = new System.Drawing.Point(103, 552);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(117, 32);
+            this.label14.TabIndex = 13;
+            this.label14.Text = "Breeding";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::DairyFarmTask.Properties.Resources.icons8_heart_with_dog_paw_50;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 438);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(85, 51);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 12;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.Control;
+            this.label7.Location = new System.Drawing.Point(103, 447);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(88, 32);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Health";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::DairyFarmTask.Properties.Resources.icons8_milk_carton_50;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 342);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(85, 51);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.Control;
+            this.label6.Location = new System.Drawing.Point(103, 351);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(199, 32);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Milk Production";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -133,6 +300,17 @@
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(1220, 54);
             this.guna2GradientPanel1.TabIndex = 2;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.DimGray;
+            this.label19.Location = new System.Drawing.Point(951, 12);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(173, 32);
+            this.label19.TabIndex = 27;
+            this.label19.Text = "Manage Cows";
             // 
             // label1
             // 
@@ -350,26 +528,26 @@
             // 
             // guna2DataGridView1
             // 
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.guna2DataGridView1.ColumnHeadersHeight = 4;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(331, 427);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
@@ -457,162 +635,6 @@
             this.button4.Text = "Update";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(103, 447);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(88, 32);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Health";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.Control;
-            this.label14.Location = new System.Drawing.Point(103, 552);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(117, 32);
-            this.label14.TabIndex = 13;
-            this.label14.Text = "Breeding";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.Control;
-            this.label15.Location = new System.Drawing.Point(103, 653);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(128, 32);
-            this.label15.TabIndex = 15;
-            this.label15.Text = "Milk Sales";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.Control;
-            this.label16.Location = new System.Drawing.Point(103, 757);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(101, 32);
-            this.label16.TabIndex = 17;
-            this.label16.Text = "Finance";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.Control;
-            this.label17.Location = new System.Drawing.Point(103, 863);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(138, 32);
-            this.label17.TabIndex = 19;
-            this.label17.Text = "Dashboard";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(12, 253);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(290, 58);
-            this.panel2.TabIndex = 21;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Gabriola", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(25, 147);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(277, 68);
-            this.label18.TabIndex = 22;
-            this.label18.Text = "Dairy Farm Software";
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::DairyFarmTask.Properties.Resources.icons8_cow_breed_161;
-            this.pictureBox8.Location = new System.Drawing.Point(80, 12);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(151, 120);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 23;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::DairyFarmTask.Properties.Resources.icons8_cow_breed_64;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(85, 51);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::DairyFarmTask.Properties.Resources.icons8_dashboard_layout_48;
-            this.pictureBox7.Location = new System.Drawing.Point(12, 854);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(85, 51);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 20;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::DairyFarmTask.Properties.Resources.icons8_total_sales_64;
-            this.pictureBox6.Location = new System.Drawing.Point(12, 748);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(85, 51);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 18;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::DairyFarmTask.Properties.Resources.icons8_discount_50;
-            this.pictureBox5.Location = new System.Drawing.Point(12, 644);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(85, 51);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 16;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::DairyFarmTask.Properties.Resources.icons8_cow_udder_96;
-            this.pictureBox4.Location = new System.Drawing.Point(12, 543);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(85, 51);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 14;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::DairyFarmTask.Properties.Resources.icons8_heart_with_dog_paw_50;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 438);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(85, 51);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 12;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.DimGray;
-            this.label19.Location = new System.Drawing.Point(951, 12);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(173, 32);
-            this.label19.TabIndex = 27;
-            this.label19.Text = "Manage Cows";
-            // 
             // bunifuMaterialTextbox5
             // 
             this.bunifuMaterialTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -642,27 +664,6 @@
             this.label9.Size = new System.Drawing.Size(97, 38);
             this.label9.TabIndex = 19;
             this.label9.Text = "Pasture";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::DairyFarmTask.Properties.Resources.icons8_milk_carton_50;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 342);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(85, 51);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(103, 351);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(199, 32);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Milk Production";
             // 
             // Cows
             // 
@@ -699,12 +700,9 @@
             this.Text = "Cows";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.guna2GradientPanel1.ResumeLayout(false);
-            this.guna2GradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -712,6 +710,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.guna2GradientPanel1.ResumeLayout(false);
+            this.guna2GradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
