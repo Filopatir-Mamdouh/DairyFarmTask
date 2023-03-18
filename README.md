@@ -1,2 +1,2 @@
 # DairyFarmTask
-A task to create a dairy farm project using c#
+a Task assigned to us by instructor to create dairy farm project using c#
