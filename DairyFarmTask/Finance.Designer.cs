@@ -84,7 +84,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -245,7 +244,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.panel2);
@@ -771,14 +769,6 @@
             this.label20.TabIndex = 29;
             this.label20.Text = "Income List";
             // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.Transparent;
-            this.panel10.Location = new System.Drawing.Point(12, 854);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(290, 58);
-            this.panel10.TabIndex = 27;
-            // 
             // Finance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -878,6 +868,5 @@
         private System.Windows.Forms.Label label20;
         private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker3;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Panel panel10;
     }
 }
