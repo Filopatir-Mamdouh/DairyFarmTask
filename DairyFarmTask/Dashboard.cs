@@ -30,5 +30,12 @@ namespace DairyFarmTask
             this.Hide();
             milk.Show();
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            CowHealth health=new CowHealth();
+            this.Hide();
+            health.Show();
+        }
     }
 }
