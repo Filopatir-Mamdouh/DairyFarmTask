@@ -74,12 +74,6 @@
     <Compile Include="CowHealth.Designer.cs">
       <DependentUpon>CowHealth.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dashboard.Designer.cs">
-      <DependentUpon>Dashboard.cs</DependentUpon>
-    </Compile>
     <Compile Include="DatabaseConnection.cs" />
     <Compile Include="Finance.cs">
       <SubType>Form</SubType>
@@ -121,9 +115,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CowHealth.resx">
       <DependentUpon>CowHealth.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dashboard.resx">
-      <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Finance.resx">
       <DependentUpon>Finance.cs</DependentUpon>
