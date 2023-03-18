@@ -16,5 +16,12 @@ namespace DairyFarmTask
         {
             InitializeComponent();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Cows cow = new Cows();
+            this.Hide();
+            cow.Show();
+        }
     }
 }
