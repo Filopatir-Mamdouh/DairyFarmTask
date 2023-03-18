@@ -58,5 +58,10 @@ namespace DairyFarmTask
             this.Hide();
             finance.Show();
         }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
