@@ -55,5 +55,12 @@ namespace DairyFarmTask
             this.Hide();
             dashboard.Show();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Cows cows = new Cows();
+            this.Hide();
+            cows.Show();
+        }
     }
 }
