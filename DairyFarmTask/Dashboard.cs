@@ -44,5 +44,12 @@ namespace DairyFarmTask
             this.Hide();
             breeding.Show();
         }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+            MilkSales sales = new MilkSales();
+            this.Hide();
+            sales.Show();
+        }
     }
 }
