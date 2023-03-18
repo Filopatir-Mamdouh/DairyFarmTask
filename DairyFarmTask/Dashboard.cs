@@ -23,5 +23,12 @@ namespace DairyFarmTask
             this.Hide();
             cow.Show();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Milk_Production milk = new Milk_Production();
+            this.Hide();
+            milk.Show();
+        }
     }
 }
