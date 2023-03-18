@@ -60,7 +60,9 @@ namespace DairyFarmTask
 
         private void label17_Click(object sender, EventArgs e)
         {
-
+            Dashboard dashboard = new Dashboard();
+            this.Hide();
+            dashboard.Show();
         }
     }
 }
