@@ -24,7 +24,7 @@ namespace DairyFarmTask
 
         private void label7_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -60,6 +60,13 @@ namespace DairyFarmTask
             Dashboard dashboard = new Dashboard();
             this.Hide();
             dashboard.Show();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Cows cows = new Cows();
+            this.Hide();
+            cows.Show();
         }
     }
 }
