@@ -37,5 +37,12 @@ namespace DairyFarmTask
             this.Hide();
             health.Show();
         }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+            Breeding breeding = new Breeding();
+            this.Hide();
+            breeding.Show();
+        }
     }
 }
