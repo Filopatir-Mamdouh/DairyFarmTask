@@ -97,7 +97,7 @@ namespace DairyFarmTask
             AmMilk.Text = ""; 
             NoonMilk.Text = ""; 
             PmMilk.Text = ""; 
-            TotalMilk.Text = "Test";
+            TotalMilk.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -146,6 +146,26 @@ namespace DairyFarmTask
             {
                 int total = Convert.ToInt32(AmMilk.Text) + Convert.ToInt32(NoonMilk.Text) + Convert.ToInt32(PmMilk.Text);
                 TotalMilk.Text = "" + total;
+            }
+        }
+
+        int key = 0;
+        private void MilkList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Cowid.SelectedValue = MilkList.SelectedRows[0].Cells[1].Value.ToString();
+            CowName.Text = MilkList.SelectedRows[0].Cells[2].Value.ToString();
+            AmMilk.Text = MilkList.SelectedRows[0].Cells[3].Value.ToString();
+            NoonMilk.Text = MilkList.SelectedRows[0].Cells[4].Value.ToString();
+            PmMilk.Text = MilkList.SelectedRows[0].Cells[5].Value.ToString();
+            TotalMilk.Text = MilkList.SelectedRows[0].Cells[6].Value.ToString();
+            Date.Value = (DateTime)MilkList.SelectedRows[0].Cells[7].Value;
+            if (CowName.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(MilkList.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
     }
