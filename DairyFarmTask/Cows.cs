@@ -18,6 +18,11 @@ namespace DairyFarmTask
             InitializeComponent();
         }
 
+        private void ShowData()
+        {
+            string Query = "Select * From Cowtb";
+
+        }
         private void label6_Click(object sender, EventArgs e)
         {
             Milk_Production milk = new Milk_Production();
@@ -72,7 +77,7 @@ namespace DairyFarmTask
                 {
                     String Query = "INSERT INTO CowTb values('" + CowName.Text + "' , '" + EarTag.Text + "' , '" + Color.Text + "' , '" + Breed.Text + "' , " + Convert.ToInt32(Age.Text) +" , "+ Convert.ToInt32(Weight.Text)+", '" + Pasture.Text +"')";
                     connection.SetData(Query);
-                    MessageBox.Show("Saved Successfully !!!");
+                    MessageBox.Show("Saved Successfully!!!");
                 }
                 catch (Exception ex)
                 {
