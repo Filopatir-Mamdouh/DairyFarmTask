@@ -98,5 +98,28 @@ namespace DairyFarmTask
                 }
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (Cowid.SelectedIndex == -1 || CowName.Text == "" || Event.Text == "" || Diagnosis.Text == "" || Treatment.Text == "" || Cost.Text == "" || VetName.Text== "")
+            {
+                MessageBox.Show("Missing Information!!!");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "INSERT INTO HealthTb values(" + Cowid.SelectedValue.ToString() + " , '" + CowName.Text + "' , '" + Date.Value.Date + "' , '" + Event.Text + "' , '" + Diagnosis.Text + "' , " + Treatment.Text + " , " + Cost.Text + " , '"+VetName.Text+")";
+                    connection.SetData(Query);
+                    MessageBox.Show("Saved Successfully!!!");
+                    clear();
+                    ShowData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
