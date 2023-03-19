@@ -108,5 +108,10 @@ namespace DairyFarmTask
             }
             Age.Text = ""+ (DateTime.Today.Date - DoB.Value.Date).Days/365;
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            clear();
+        }
     }
 }
