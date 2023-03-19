@@ -97,7 +97,7 @@ namespace DairyFarmTask
             AmMilk.Text = ""; 
             NoonMilk.Text = ""; 
             PmMilk.Text = ""; 
-            TotalMilk.Text = "";
+            TotalMilk.Text = "Test";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -110,7 +110,7 @@ namespace DairyFarmTask
             {
                 try
                 {
-                    String Query = "INSERT INTO MilkTb values(" + Cowid.SelectedValue.ToString() + " , '" + CowName.Text + "' , " + AmMilk.Text + " , " + NoonMilk.Text + " , " + PmMilk.Text + " , " + TotalMilk.Text + ", '" + Date.Value.Date + "')";
+                    String Query = "INSERT INTO MilkTb values(" + Cowid.SelectedValue.ToString() + " , '" + CowName.Text + "' , " + AmMilk.Text + " , " + NoonMilk.Text + " , " + PmMilk.Text + " , " + TotalMilk.Text + " , '" + Date.Value.Date + "')";
                     connection.SetData(Query);
                     MessageBox.Show("Saved Successfully!!!");
                     clear();
@@ -142,8 +142,11 @@ namespace DairyFarmTask
 
         private void PmMilk_OnValueChanged(object sender, EventArgs e)
         {
-            int total = Convert.ToInt32(AmMilk.Text) + Convert.ToInt32(NoonMilk.Text) + Convert.ToInt32(PmMilk.Text);
-            TotalMilk.Text = "" + total;
+            if (PmMilk.Text != "")
+            {
+                int total = Convert.ToInt32(AmMilk.Text) + Convert.ToInt32(NoonMilk.Text) + Convert.ToInt32(PmMilk.Text);
+                TotalMilk.Text = "" + total;
+            }
         }
     }
 }
