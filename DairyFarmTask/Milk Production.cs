@@ -16,6 +16,14 @@ namespace DairyFarmTask
         public Milk_Production()
         {
             InitializeComponent();
+            ShowData();
+        }
+
+        private void ShowData()
+        {
+            string Query = "Select * From MilkTb";
+            MilkList.DataSource = connection.GetData(Query);
+
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
