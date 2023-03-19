@@ -92,6 +92,7 @@ namespace DairyFarmTask
                     connection.SetData(Query);
                     MessageBox.Show("Saved Successfully!!!");
                     clear();
+                    ShowData();
                 }
                 catch (Exception ex)
                 {
