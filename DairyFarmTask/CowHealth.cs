@@ -15,6 +15,8 @@ namespace DairyFarmTask
         public CowHealth()
         {
             InitializeComponent();
+            FillCowId();
+            ShowData();
         }
 
         DatabaseConnection connection = new DatabaseConnection();
@@ -78,6 +80,12 @@ namespace DairyFarmTask
             Cowid.DataSource = connection.GetData(Query);
         }
 
+        private void ShowData()
+        {
+            string Query = "Select * From HealthTb";
+            HealthList.DataSource = connection.GetData(Query);
+
+        }
         private void Cowid_SelectedIndexChanged(object sender, EventArgs e)
         {
 
