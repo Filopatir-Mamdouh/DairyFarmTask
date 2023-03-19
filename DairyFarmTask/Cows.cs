@@ -67,6 +67,17 @@ namespace DairyFarmTask
             dashboard.Show();
         }
 
+        private void clear()
+        {
+            CowName.Text = "";
+            EarTag.Text = "";
+            Color.Text = "";
+            Breed.Text = "";
+            Age.Text = "";
+            Weight.Text = "";
+            Pasture.Text = "";
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (CowName.Text == "" || EarTag.Text == "" || Color.Text == "" || Breed.Text == "" || Age.Text == "" || Weight.Text == "" || Pasture.Text == "")
