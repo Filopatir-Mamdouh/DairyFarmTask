@@ -12,6 +12,7 @@ namespace DairyFarmTask
 {
     public partial class Milk_Production : Form
     {
+        DatabaseConnection connection = new DatabaseConnection();
         public Milk_Production()
         {
             InitializeComponent();
