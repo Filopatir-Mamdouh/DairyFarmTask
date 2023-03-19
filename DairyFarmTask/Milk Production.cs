@@ -113,7 +113,7 @@ namespace DairyFarmTask
                     String Query = "INSERT INTO MilkTb values(" + Cowid.SelectedValue.ToString() + " , '" + CowName.Text + "' , " + AmMilk.Text + " , " + NoonMilk.Text + " , " + PmMilk.Text + " , " + TotalMilk.Text + ", '" + Date.Value.Date + "')";
                     connection.SetData(Query);
                     MessageBox.Show("Saved Successfully!!!");
-                    //clear();
+                    clear();
                     ShowData();
                 }
                 catch (Exception ex)
