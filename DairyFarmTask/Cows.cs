@@ -116,14 +116,23 @@ namespace DairyFarmTask
         int key = 0;
         private void CowList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            key = Convert.ToInt32(CowList.SelectedRows[0].Cells[0].Value.ToString());
             CowName.Text = CowList.SelectedRows[0].Cells[1].Value.ToString();
             EarTag.Text = CowList.SelectedRows[0].Cells[2].Value.ToString();
             Color.Text = CowList.SelectedRows[0].Cells[3].Value.ToString();
             Breed.Text = CowList.SelectedRows[0].Cells[4].Value.ToString();
-            Age.Text = CowList.SelectedRows[0].Cells[5].Value.ToString();
             Weight.Text = CowList.SelectedRows[0].Cells[6].Value.ToString();
             Pasture.Text = CowList.SelectedRows[0].Cells[7].Value.ToString();
+
+            if(CowName.Text == "")
+            {
+                key = 0;
+                Age.Text = ""+0;
+            }
+            else
+            {
+                key = Convert.ToInt32(CowList.SelectedRows[0].Cells[0].Value.ToString());
+                Age.Text = CowList.SelectedRows[0].Cells[5].Value.ToString();
+            }
         }
     }
 }
