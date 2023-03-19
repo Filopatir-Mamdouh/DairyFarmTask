@@ -24,5 +24,13 @@ namespace DairyFarmTask
             cmd.Connection = con;
         }
 
+        public DataTable GetData(String Query)
+        {
+            dt = new DataTable();
+            sda = new SqlDataAdapter(Query, Constr);
+            sda.Fill(dt);
+            return dt;
+
+        }
     }
 }
