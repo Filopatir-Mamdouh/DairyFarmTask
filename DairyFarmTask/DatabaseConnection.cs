@@ -18,7 +18,8 @@ namespace DairyFarmTask
         private String Constr;
         public DatabaseConnection()
         {
-            con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Nour\Documents\DairyFarmDb.mdf;Integrated Security=True;Connect Timeout=30");
+            Constr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Nour\Documents\DairyFarmDb.mdf;Integrated Security=True;Connect Timeout=30";
+            con = new SqlConnection(Constr);
             cmd = new SqlCommand();
             cmd.Connection = con;
         }
