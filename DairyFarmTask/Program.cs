@@ -16,7 +16,7 @@ namespace DairyFarmTask
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Milk_Production());
+            Application.Run(new CowHealth());
         }
     }
 }
