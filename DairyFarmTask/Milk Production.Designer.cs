@@ -58,11 +58,11 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
-            this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.Date = new Bunifu.Framework.UI.BunifuDatepicker();
             this.label10 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox6 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.TotalMilk = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label11 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox7 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.PmMilk = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label12 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.NoonMilk = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -397,18 +397,18 @@
             this.label13.TabIndex = 60;
             this.label13.Text = "Daily Milk";
             // 
-            // bunifuDatepicker1
+            // Date
             // 
-            this.bunifuDatepicker1.BackColor = System.Drawing.Color.DarkGray;
-            this.bunifuDatepicker1.BorderRadius = 0;
-            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.bunifuDatepicker1.FormatCustom = null;
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(1115, 247);
-            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
-            this.bunifuDatepicker1.Size = new System.Drawing.Size(191, 36);
-            this.bunifuDatepicker1.TabIndex = 59;
-            this.bunifuDatepicker1.Value = new System.DateTime(2023, 3, 9, 5, 32, 14, 536);
+            this.Date.BackColor = System.Drawing.Color.DarkGray;
+            this.Date.BorderRadius = 0;
+            this.Date.ForeColor = System.Drawing.Color.White;
+            this.Date.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.Date.FormatCustom = null;
+            this.Date.Location = new System.Drawing.Point(1115, 247);
+            this.Date.Name = "Date";
+            this.Date.Size = new System.Drawing.Size(191, 36);
+            this.Date.TabIndex = 59;
+            this.Date.Value = new System.DateTime(2023, 3, 9, 5, 32, 14, 536);
             // 
             // label10
             // 
@@ -421,24 +421,24 @@
             this.label10.TabIndex = 58;
             this.label10.Text = "Total Milk";
             // 
-            // bunifuMaterialTextbox6
+            // TotalMilk
             // 
-            this.bunifuMaterialTextbox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox6.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox6.HintText = "";
-            this.bunifuMaterialTextbox6.isPassword = false;
-            this.bunifuMaterialTextbox6.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox6.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox6.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox6.LineThickness = 4;
-            this.bunifuMaterialTextbox6.Location = new System.Drawing.Point(838, 243);
-            this.bunifuMaterialTextbox6.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.bunifuMaterialTextbox6.Name = "bunifuMaterialTextbox6";
-            this.bunifuMaterialTextbox6.Size = new System.Drawing.Size(191, 41);
-            this.bunifuMaterialTextbox6.TabIndex = 57;
-            this.bunifuMaterialTextbox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TotalMilk.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TotalMilk.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalMilk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TotalMilk.HintForeColor = System.Drawing.Color.Empty;
+            this.TotalMilk.HintText = "";
+            this.TotalMilk.isPassword = false;
+            this.TotalMilk.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.TotalMilk.LineIdleColor = System.Drawing.Color.Gray;
+            this.TotalMilk.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.TotalMilk.LineThickness = 4;
+            this.TotalMilk.Location = new System.Drawing.Point(838, 243);
+            this.TotalMilk.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TotalMilk.Name = "TotalMilk";
+            this.TotalMilk.Size = new System.Drawing.Size(191, 41);
+            this.TotalMilk.TabIndex = 57;
+            this.TotalMilk.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label11
             // 
@@ -451,24 +451,24 @@
             this.label11.TabIndex = 56;
             this.label11.Text = "Pm Milk";
             // 
-            // bunifuMaterialTextbox7
+            // PmMilk
             // 
-            this.bunifuMaterialTextbox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox7.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox7.HintText = "";
-            this.bunifuMaterialTextbox7.isPassword = false;
-            this.bunifuMaterialTextbox7.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox7.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox7.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox7.LineThickness = 4;
-            this.bunifuMaterialTextbox7.Location = new System.Drawing.Point(563, 243);
-            this.bunifuMaterialTextbox7.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.bunifuMaterialTextbox7.Name = "bunifuMaterialTextbox7";
-            this.bunifuMaterialTextbox7.Size = new System.Drawing.Size(191, 41);
-            this.bunifuMaterialTextbox7.TabIndex = 55;
-            this.bunifuMaterialTextbox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.PmMilk.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PmMilk.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PmMilk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PmMilk.HintForeColor = System.Drawing.Color.Empty;
+            this.PmMilk.HintText = "";
+            this.PmMilk.isPassword = false;
+            this.PmMilk.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.PmMilk.LineIdleColor = System.Drawing.Color.Gray;
+            this.PmMilk.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.PmMilk.LineThickness = 4;
+            this.PmMilk.Location = new System.Drawing.Point(563, 243);
+            this.PmMilk.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.PmMilk.Name = "PmMilk";
+            this.PmMilk.Size = new System.Drawing.Size(191, 41);
+            this.PmMilk.TabIndex = 55;
+            this.PmMilk.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label12
             // 
@@ -663,11 +663,11 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.bunifuDatepicker1);
+            this.Controls.Add(this.Date);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.bunifuMaterialTextbox6);
+            this.Controls.Add(this.TotalMilk);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.bunifuMaterialTextbox7);
+            this.Controls.Add(this.PmMilk);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.NoonMilk);
@@ -731,11 +731,11 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label13;
-        private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker1;
+        private Bunifu.Framework.UI.BunifuDatepicker Date;
         private System.Windows.Forms.Label label10;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox6;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox TotalMilk;
         private System.Windows.Forms.Label label11;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox7;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox PmMilk;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuMaterialTextbox NoonMilk;
