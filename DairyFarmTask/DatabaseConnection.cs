@@ -30,7 +30,6 @@ namespace DairyFarmTask
             sda = new SqlDataAdapter(Query, Constr);
             sda.Fill(dt);
             return dt;
-
         }
     }
 }
