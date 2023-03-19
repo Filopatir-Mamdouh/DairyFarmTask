@@ -17,6 +17,8 @@ namespace DairyFarmTask
             InitializeComponent();
         }
 
+        DatabaseConnection connection = new DatabaseConnection();
+
         private void pictureBox3_Click(object sender, EventArgs e)
         {
 
@@ -67,6 +69,18 @@ namespace DairyFarmTask
             Cows cows = new Cows();
             this.Hide();
             cows.Show();
+        }
+
+        private void FillCowId()
+        {
+            String Query = "Select Cowid From CowTb";
+            Cowid.ValueMember = "Cowid";
+            Cowid.DataSource = connection.GetData(Query);
+        }
+
+        private void Cowid_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
