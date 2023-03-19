@@ -191,5 +191,28 @@ namespace DairyFarmTask
                 }
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Select a Row");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "UPDATE MilkTb set Cowid = " + Convert.ToInt32(Cowid.Text) + " , CowName = '" + CowName.Text + "' , AmMilk = " + Convert.ToInt32(AmMilk.Text) + " , NoonMilk = " + Convert.ToInt32(NoonMilk.Text) + " , PmMilk =  " + Convert.ToInt32(PmMilk.Text) + " , TotalMilk = " + Convert.ToInt32(TotalMilk.Text) + ", DateProd = '" + Date.Value.Date + "' WHERE Mid = " + key;
+                    connection.SetData(Query);
+                    MessageBox.Show("Updated Successfully!!!");
+                    clear();
+                    ShowData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
