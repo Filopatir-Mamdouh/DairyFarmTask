@@ -86,9 +86,17 @@ namespace DairyFarmTask
             HealthList.DataSource = connection.GetData(Query);
 
         }
+
         private void Cowid_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (Cowid.SelectedIndex != -1)
+            {
+                String Query = "Select CowName From CowTb WHERE Cowid = " + Cowid.SelectedValue.ToString();
+                foreach (DataRow dr in connection.GetData(Query).Rows)
+                {
+                    CowName.Text = dr["CowName"].ToString();
+                }
+            }
         }
     }
 }
