@@ -140,7 +140,7 @@ namespace DairyFarmTask
         {
             if (key == 0)
             {
-                MessageBox.Show("Select Row");
+                MessageBox.Show("Select a Row");
             }
             else
             {
@@ -149,6 +149,29 @@ namespace DairyFarmTask
                     String Query = "DELETE FROM CowTb WHERE Cowid = "+key;
                     connection.SetData(Query);
                     MessageBox.Show("Deleted Successfully!!!");
+                    clear();
+                    ShowData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Select a Row");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "INSERT INTO CowTb values('" + CowName.Text + "' , '" + EarTag.Text + "' , '" + Color.Text + "' , '" + Breed.Text + "' , " + Convert.ToInt32(Age.Text) + " , " + Convert.ToInt32(Weight.Text) + ", '" + Pasture.Text + "') WHERE Cowid = " + key;
+                    connection.SetData(Query);
+                    MessageBox.Show("Updated Successfully!!!");
                     clear();
                     ShowData();
                 }
