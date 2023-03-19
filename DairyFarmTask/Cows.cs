@@ -76,6 +76,7 @@ namespace DairyFarmTask
             Age.Text = "";
             Weight.Text = "";
             Pasture.Text = "";
+            key = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
