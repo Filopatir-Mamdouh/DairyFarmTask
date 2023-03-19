@@ -71,6 +71,8 @@ namespace DairyFarmTask
                 try
                 {
                     String Query = "INSERT INTO CowTb values('" + CowName.Text + "' , '" + EarTag.Text + "' , '" + Color.Text + "' , '" + Breed.Text + "' , " + Convert.ToInt32(Age.Text) +" , "+ Convert.ToInt32(Weight.Text)+", '" + Pasture.Text +"')";
+                    connection.SetData(Query);
+                    MessageBox.Show("Saved Successfully !!!");
                 }
                 catch (Exception ex)
                 {
