@@ -127,5 +127,14 @@ namespace DairyFarmTask
         {
             clear();
         }
+
+        private void Cowid_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            String Query = "Select CowName From CowTb WHERE Cowid = " + Cowid.SelectedValue.ToString();
+            foreach(DataRow dr in connection.GetData(Query).Rows) 
+            {
+                CowName.Text= dr["CowName"].ToString();
+            }
+        }
     }
 }
