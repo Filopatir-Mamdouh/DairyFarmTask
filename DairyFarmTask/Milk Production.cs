@@ -107,7 +107,7 @@ namespace DairyFarmTask
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (CowName.Text == "" || EarTag.Text == "" || Color.Text == "" || Breed.Text == "" || Age.Text == "" || Weight.Text == "" || Pasture.Text == "")
+            if (Cowid.SelectedIndex == -1 || CowName.Text == "" || AmMilk.Text == "" || NoonMilk.Text == "" || PmMilk.Text == "" || TotalMilk.Text == "")
             {
                 MessageBox.Show("Missing Information!!!");
             }
@@ -115,10 +115,10 @@ namespace DairyFarmTask
             {
                 try
                 {
-                    String Query = "INSERT INTO CowTb values('" + CowName.Text + "' , '" + EarTag.Text + "' , '" + Color.Text + "' , '" + Breed.Text + "' , " + Convert.ToInt32(Age.Text) + " , " + Convert.ToInt32(Weight.Text) + ", '" + Pasture.Text + "')";
+                    String Query = "INSERT INTO MilkTb values(" + Cowid.SelectedValue.ToString() + " , '" + CowName.Text + "' , " + AmMilk.Text + " , " + NoonMilk.Text + " , " + PmMilk.Text + " , " + TotalMilk.Text + ", '" + Date.Value.Date + "')";
                     connection.SetData(Query);
                     MessageBox.Show("Saved Successfully!!!");
-                    clear();
+                    //clear();
                     ShowData();
                 }
                 catch (Exception ex)
