@@ -17,6 +17,7 @@ namespace DairyFarmTask
         {
             InitializeComponent();
             ShowData();
+            FillCowId();
         }
 
         private void ShowData()
@@ -82,6 +83,7 @@ namespace DairyFarmTask
         private void FillCowId()
         {
             String Query = "Select Cowid From CowTb";
+            Cowid.ValueMember = "Cowid";
             Cowid.DataSource = connection.GetData(Query);
         }
     }
