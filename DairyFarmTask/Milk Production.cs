@@ -130,10 +130,13 @@ namespace DairyFarmTask
 
         private void Cowid_SelectedIndexChanged(object sender, EventArgs e)
         {
-            String Query = "Select CowName From CowTb WHERE Cowid = " + Cowid.SelectedValue.ToString();
-            foreach(DataRow dr in connection.GetData(Query).Rows) 
+            if (Cowid.SelectedIndex != -1)
             {
-                CowName.Text= dr["CowName"].ToString();
+                String Query = "Select CowName From CowTb WHERE Cowid = " + Cowid.SelectedValue.ToString();
+                foreach (DataRow dr in connection.GetData(Query).Rows)
+                {
+                    CowName.Text = dr["CowName"].ToString();
+                }
             }
         }
 
