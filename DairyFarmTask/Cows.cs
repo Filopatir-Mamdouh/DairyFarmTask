@@ -69,13 +69,21 @@ namespace DairyFarmTask
             {
                 try
                 {
-                    String Query = "INSERT INTO CowTb values('"+CowName.Text+"' , '"+EarTag.Text+"' , '"+Color.Text+"' , '"+ Breed.Text + "' , " + Convert.ToInt32(Age.Text);
+                    String Query = "INSERT INTO CowTb values('" + CowName.Text + "' , '" + EarTag.Text + "' , '" + Color.Text + "' , '" + Breed.Text + "' , " + Convert.ToInt32(Age.Text);
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void DoB_onValueChanged(object sender, EventArgs e)
+        {
+            if (DoB.Value > DateTime.Today.Date) {
+                DoB.Value = DateTime.Today.Date; 
+            }
+            Age.Text = ""+ (DateTime.Today.Date - DoB.Value.Date).Days/365;
         }
     }
 }

@@ -523,13 +523,14 @@
             this.DoB.BackColor = System.Drawing.Color.DarkGray;
             this.DoB.BorderRadius = 0;
             this.DoB.ForeColor = System.Drawing.Color.White;
-            this.DoB.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DoB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DoB.FormatCustom = null;
             this.DoB.Location = new System.Drawing.Point(361, 250);
             this.DoB.Name = "DoB";
             this.DoB.Size = new System.Drawing.Size(191, 36);
             this.DoB.TabIndex = 20;
             this.DoB.Value = new System.DateTime(2023, 3, 9, 5, 32, 14, 536);
+            this.DoB.onValueChanged += new System.EventHandler(this.DoB_onValueChanged);
             // 
             // guna2DataGridView1
             // 
