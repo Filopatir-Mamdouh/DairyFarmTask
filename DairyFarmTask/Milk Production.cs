@@ -90,21 +90,6 @@ namespace DairyFarmTask
             Cowid.DataSource = connection.GetData(Query);
         }
 
-        private void Cowid_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                String Query = "Select CowName From CowTb WHERE Cowid = " + Convert.ToInt32(Cowid.SelectedValue);
-                MessageBox.Show("Test " + connection.GetData(Query).ToString());
-                CowName.Text = connection.GetData(Query).Constraints.ToString();
-                MilkList.DataSource = connection.GetData(Query);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (Cowid.SelectedIndex == -1 || CowName.Text == "" || AmMilk.Text == "" || NoonMilk.Text == "" || PmMilk.Text == "" || TotalMilk.Text == "")
