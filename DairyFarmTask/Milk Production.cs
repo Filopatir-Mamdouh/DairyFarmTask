@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -89,8 +92,40 @@ namespace DairyFarmTask
 
         private void Cowid_SelectedIndexChanged(object sender, EventArgs e)
         {
-            String Query = "Select CowName From CowTb WHERE Cowid = " + Cowid.SelectedText ;
-            CowName.Text = connection.GetData(Query).ToString();
+            try
+            {
+                String Query = "Select CowName From CowTb WHERE Cowid = " + Convert.ToInt32(Cowid.SelectedValue);
+                MessageBox.Show("Test " + connection.GetData(Query).ToString());
+                CowName.Text = connection.GetData(Query).Constraints.ToString();
+                MilkList.DataSource = connection.GetData(Query);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (CowName.Text == "" || EarTag.Text == "" || Color.Text == "" || Breed.Text == "" || Age.Text == "" || Weight.Text == "" || Pasture.Text == "")
+            {
+                MessageBox.Show("Missing Information!!!");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "INSERT INTO CowTb values('" + CowName.Text + "' , '" + EarTag.Text + "' , '" + Color.Text + "' , '" + Breed.Text + "' , " + Convert.ToInt32(Age.Text) + " , " + Convert.ToInt32(Weight.Text) + ", '" + Pasture.Text + "')";
+                    connection.SetData(Query);
+                    MessageBox.Show("Saved Successfully!!!");
+                    clear();
+                    ShowData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
