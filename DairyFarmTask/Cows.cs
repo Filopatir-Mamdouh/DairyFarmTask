@@ -169,7 +169,7 @@ namespace DairyFarmTask
             {
                 try
                 {
-                    String Query = "UPDATE CowTb set CowName = '" + CowName.Text + "' , EarTag = '" + EarTag.Text + "' , Color = '" + Color.Text + "' , Breed = '" + Breed.Text + "' , Age =  " + Convert.ToInt32(Age.Text) + " , WeightAtBirth = " + Convert.ToInt32(Weight.Text) + ", Pasture = '" + Pasture.Text + "') WHERE Cowid = " + key;
+                    String Query = "UPDATE CowTb set CowName = '" + CowName.Text + "' , EarTag = '" + EarTag.Text + "' , Color = '" + Color.Text + "' , Breed = '" + Breed.Text + "' , Age =  " + Convert.ToInt32(Age.Text) + " , WeightAtBirth = " + Convert.ToInt32(Weight.Text) + ", Pasture = '" + Pasture.Text + "' WHERE Cowid = " + key;
                     connection.SetData(Query);
                     MessageBox.Show("Updated Successfully!!!");
                     clear();
