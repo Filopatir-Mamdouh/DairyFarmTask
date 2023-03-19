@@ -135,5 +135,28 @@ namespace DairyFarmTask
                 Age.Text = CowList.SelectedRows[0].Cells[5].Value.ToString();
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Select Row");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "DELETE FROM CowTb WHERE Cowid = "+key;
+                    connection.SetData(Query);
+                    MessageBox.Show("Deleted Successfully!!!");
+                    clear();
+                    ShowData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
