@@ -86,5 +86,11 @@ namespace DairyFarmTask
             Cowid.ValueMember = "Cowid";
             Cowid.DataSource = connection.GetData(Query);
         }
+
+        private void Cowid_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            String Query = "Select CowName From CowTb WHERE Cowid = " + Cowid.SelectedText ;
+            CowName.Text = connection.GetData(Query).ToString();
+        }
     }
 }
