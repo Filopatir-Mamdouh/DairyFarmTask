@@ -99,6 +99,17 @@ namespace DairyFarmTask
             }
         }
 
+        private void clear()
+        {
+            Cowid.SelectedIndex = -1;
+            CowName.Text = "";
+            Event.Text = ""; 
+            Diagnosis.Text = "";
+            Treatment.Text = "";
+            Cost.Text = ""; 
+            VetName.Text = "";
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (Cowid.SelectedIndex == -1 || CowName.Text == "" || Event.Text == "" || Diagnosis.Text == "" || Treatment.Text == "" || Cost.Text == "" || VetName.Text== "")
