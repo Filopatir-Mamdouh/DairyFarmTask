@@ -136,5 +136,11 @@ namespace DairyFarmTask
                 CowName.Text= dr["CowName"].ToString();
             }
         }
+
+        private void PmMilk_OnValueChanged(object sender, EventArgs e)
+        {
+            int total = Convert.ToInt32(AmMilk.Text) + Convert.ToInt32(NoonMilk.Text) + Convert.ToInt32(PmMilk.Text);
+            TotalMilk.Text = "" + total;
+        }
     }
 }
