@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label19 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -74,6 +74,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.Cowid = new System.Windows.Forms.ComboBox();
             this.HealthList = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.Date = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -165,7 +167,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label10.Location = new System.Drawing.Point(831, 200);
+            this.label10.Location = new System.Drawing.Point(934, 198);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(211, 38);
             this.label10.TabIndex = 80;
@@ -183,7 +185,7 @@
             this.Cost.LineIdleColor = System.Drawing.Color.Gray;
             this.Cost.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
             this.Cost.LineThickness = 4;
-            this.Cost.Location = new System.Drawing.Point(838, 243);
+            this.Cost.Location = new System.Drawing.Point(941, 241);
             this.Cost.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Cost.Name = "Cost";
             this.Cost.Size = new System.Drawing.Size(191, 41);
@@ -195,7 +197,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label11.Location = new System.Drawing.Point(556, 200);
+            this.label11.Location = new System.Drawing.Point(667, 198);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(128, 38);
             this.label11.TabIndex = 78;
@@ -213,7 +215,7 @@
             this.Treatment.LineIdleColor = System.Drawing.Color.Gray;
             this.Treatment.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
             this.Treatment.LineThickness = 4;
-            this.Treatment.Location = new System.Drawing.Point(563, 243);
+            this.Treatment.Location = new System.Drawing.Point(669, 241);
             this.Treatment.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Treatment.Name = "Treatment";
             this.Treatment.Size = new System.Drawing.Size(191, 41);
@@ -225,7 +227,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label12.Location = new System.Drawing.Point(1108, 200);
+            this.label12.Location = new System.Drawing.Point(1236, 198);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(121, 38);
             this.label12.TabIndex = 76;
@@ -236,7 +238,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(1196, 75);
+            this.label4.Location = new System.Drawing.Point(1236, 73);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(123, 38);
             this.label4.TabIndex = 75;
@@ -254,7 +256,7 @@
             this.Diagnosis.LineIdleColor = System.Drawing.Color.Gray;
             this.Diagnosis.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
             this.Diagnosis.LineThickness = 4;
-            this.Diagnosis.Location = new System.Drawing.Point(1203, 118);
+            this.Diagnosis.Location = new System.Drawing.Point(1243, 116);
             this.Diagnosis.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Diagnosis.Name = "Diagnosis";
             this.Diagnosis.Size = new System.Drawing.Size(191, 41);
@@ -266,7 +268,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(894, 75);
+            this.label8.Location = new System.Drawing.Point(934, 73);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(77, 38);
             this.label8.TabIndex = 73;
@@ -284,7 +286,7 @@
             this.Event.LineIdleColor = System.Drawing.Color.Gray;
             this.Event.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
             this.Event.LineThickness = 4;
-            this.Event.Location = new System.Drawing.Point(901, 118);
+            this.Event.Location = new System.Drawing.Point(941, 116);
             this.Event.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Event.Name = "Event";
             this.Event.Size = new System.Drawing.Size(191, 41);
@@ -296,7 +298,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(622, 75);
+            this.label3.Location = new System.Drawing.Point(662, 73);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(133, 38);
             this.label3.TabIndex = 71;
@@ -314,7 +316,7 @@
             this.CowName.LineIdleColor = System.Drawing.Color.Gray;
             this.CowName.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
             this.CowName.LineThickness = 4;
-            this.CowName.Location = new System.Drawing.Point(629, 118);
+            this.CowName.Location = new System.Drawing.Point(669, 116);
             this.CowName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.CowName.Name = "CowName";
             this.CowName.Size = new System.Drawing.Size(191, 41);
@@ -326,7 +328,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(354, 75);
+            this.label2.Location = new System.Drawing.Point(394, 73);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 38);
             this.label2.TabIndex = 69;
@@ -479,7 +481,7 @@
             this.VetName.LineIdleColor = System.Drawing.Color.Gray;
             this.VetName.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
             this.VetName.LineThickness = 4;
-            this.VetName.Location = new System.Drawing.Point(1115, 243);
+            this.VetName.Location = new System.Drawing.Point(1243, 241);
             this.VetName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.VetName.Name = "VetName";
             this.VetName.Size = new System.Drawing.Size(191, 41);
@@ -606,7 +608,7 @@
             this.Cowid.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.Cowid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Cowid.FormattingEnabled = true;
-            this.Cowid.Location = new System.Drawing.Point(351, 122);
+            this.Cowid.Location = new System.Drawing.Point(391, 120);
             this.Cowid.Name = "Cowid";
             this.Cowid.Size = new System.Drawing.Size(192, 29);
             this.Cowid.TabIndex = 87;
@@ -618,25 +620,25 @@
             this.HealthList.AllowUserToDeleteRows = false;
             this.HealthList.AllowUserToResizeColumns = false;
             this.HealthList.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.HealthList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.HealthList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.HealthList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.HealthList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.HealthList.ColumnHeadersHeight = 24;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.HealthList.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.HealthList.DefaultCellStyle = dataGridViewCellStyle6;
             this.HealthList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.HealthList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
             this.HealthList.Location = new System.Drawing.Point(331, 431);
@@ -670,11 +672,37 @@
             this.HealthList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
             this.HealthList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             // 
+            // Date
+            // 
+            this.Date.BackColor = System.Drawing.Color.DarkGray;
+            this.Date.BorderRadius = 0;
+            this.Date.ForeColor = System.Drawing.Color.White;
+            this.Date.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.Date.FormatCustom = null;
+            this.Date.Location = new System.Drawing.Point(391, 246);
+            this.Date.Name = "Date";
+            this.Date.Size = new System.Drawing.Size(191, 36);
+            this.Date.TabIndex = 92;
+            this.Date.Value = new System.DateTime(2023, 3, 9, 5, 32, 14, 536);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label9.Location = new System.Drawing.Point(394, 198);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(67, 38);
+            this.label9.TabIndex = 91;
+            this.label9.Text = "Date";
+            // 
             // CowHealth
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1538, 983);
+            this.Controls.Add(this.Date);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.HealthList);
             this.Controls.Add(this.Cowid);
             this.Controls.Add(this.button4);
@@ -770,5 +798,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.ComboBox Cowid;
         private Guna.UI2.WinForms.Guna2DataGridView HealthList;
+        private Bunifu.Framework.UI.BunifuDatepicker Date;
+        private System.Windows.Forms.Label label9;
     }
 }
