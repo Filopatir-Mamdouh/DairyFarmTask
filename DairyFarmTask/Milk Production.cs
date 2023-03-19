@@ -78,5 +78,11 @@ namespace DairyFarmTask
             this.Hide();
             dashboard.Show();
         }
+        
+        private void FillCowId()
+        {
+            String Query = "Select Cowid From CowTb";
+            Cowid.DataSource = connection.GetData(Query);
+        }
     }
 }
