@@ -31,5 +31,18 @@ namespace DairyFarmTask
             sda.Fill(dt);
             return dt;
         }
+
+        public int SetData(String Query)
+        {
+            int cnt = 0;
+            if ((con.State == ConnectionState.Closed))
+            {
+                con.Open();
+            }
+            cmd.CommandText = Query;
+            cnt = cmd.ExecuteNonQuery();
+            con.Close();
+            return cnt;
+        }
     }
 }
