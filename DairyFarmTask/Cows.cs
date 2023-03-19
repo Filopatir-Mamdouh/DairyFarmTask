@@ -16,11 +16,13 @@ namespace DairyFarmTask
         public Cows()
         {
             InitializeComponent();
+            ShowData();
         }
 
         private void ShowData()
         {
             string Query = "Select * From Cowtb";
+            CowList.DataSource = connection.GetData(Query);
 
         }
         private void label6_Click(object sender, EventArgs e)
