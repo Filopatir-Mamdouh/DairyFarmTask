@@ -24,6 +24,7 @@ namespace DairyFarmTask
             string Query = "Select * From Cowtb";
             CowList.DataSource = connection.GetData(Query);
         }
+
         private void label6_Click(object sender, EventArgs e)
         {
             Milk_Production milk = new Milk_Production();
