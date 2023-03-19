@@ -58,5 +58,24 @@ namespace DairyFarmTask
             this.Hide();
             dashboard.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (CowName.Text == "" || EarTag.Text == "" || Color.Text == "" || Breed.Text == "" || Age.Text == "" || Weight.Text == "" || Pasture.Text == "")
+            {
+                MessageBox.Show("Missing Information!!!");
+            }
+            else
+            {
+                try
+                {
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
