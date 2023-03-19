@@ -90,6 +90,16 @@ namespace DairyFarmTask
             Cowid.DataSource = connection.GetData(Query);
         }
 
+        private void clear()
+        {
+            Cowid.SelectedIndex = -1;
+            CowName.Text = "";  
+            AmMilk.Text = ""; 
+            NoonMilk.Text = ""; 
+            PmMilk.Text = ""; 
+            TotalMilk.Text = "";
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (Cowid.SelectedIndex == -1 || CowName.Text == "" || AmMilk.Text == "" || NoonMilk.Text == "" || PmMilk.Text == "" || TotalMilk.Text == "")
