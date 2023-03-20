@@ -137,5 +137,26 @@ namespace DairyFarmTask
         {
             clear();
         }
+
+        int key = 0;
+        private void HealthList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Cowid.SelectedValue = HealthList.SelectedRows[0].Cells[1].Value.ToString();
+            CowName.Text = HealthList.SelectedRows[0].Cells[2].Value.ToString();
+            Event.Text = HealthList.SelectedRows[0].Cells[4].Value.ToString();
+            Diagnosis.Text = HealthList.SelectedRows[0].Cells[5].Value.ToString();
+            Treatment.Text = HealthList.SelectedRows[0].Cells[6].Value.ToString();
+            Cost.Text = HealthList.SelectedRows[0].Cells[7].Value.ToString();
+            VetName.Text = HealthList.SelectedRows[0].Cells[8].Value.ToString();
+            Date.Value = (DateTime)HealthList.SelectedRows[0].Cells[3].Value;
+            if (CowName.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(HealthList.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
     }
 }
