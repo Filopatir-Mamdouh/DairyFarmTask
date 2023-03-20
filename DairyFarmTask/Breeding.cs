@@ -77,7 +77,7 @@ namespace DairyFarmTask
 
         private void ShowData()
         {
-            string Query = "Select * From HealthTb";
+            string Query = "Select * From BreedTb";
             CowList.DataSource = connection.GetData(Query);
 
         }
@@ -101,6 +101,29 @@ namespace DairyFarmTask
             CowName.Text = "";
             Age.Text = "";
             Remarks.Text = "";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (Cowid.SelectedIndex == -1 || CowName.Text == "" || Age.Text == "" || Remarks.Text == "" )
+            {
+                MessageBox.Show("Missing Information!!!");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "INSERT INTO BreedTb values('" + HDate.Value.Date + "' , '" + BDate.Value.Date + "' , " + Cowid.SelectedValue.ToString() + " , '" + CowName.Text + "' , '" + PDate.Value.Date + "' , '" + EDate.Value.Date + "', '" + CDate.Value.Date + "' , " + Age.Text + " , '" + Remarks.Text + "')";
+                    connection.SetData(Query);
+                    MessageBox.Show("Saved Successfully!!!");
+                    clear();
+                    ShowData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
