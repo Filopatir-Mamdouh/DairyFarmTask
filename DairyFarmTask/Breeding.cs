@@ -15,6 +15,7 @@ namespace DairyFarmTask
         public Breeding()
         {
             InitializeComponent();
+            FillCowId();
         }
 
         DatabaseConnection connection = new DatabaseConnection();
