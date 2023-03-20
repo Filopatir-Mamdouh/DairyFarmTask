@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Management.Instrumentation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -92,6 +93,14 @@ namespace DairyFarmTask
                     Age.Text = dr["Age"].ToString();
                 }
             }
+        }
+
+        private void clear()
+        {
+            Cowid.SelectedIndex = -1;
+            CowName.Text = "";
+            Age.Text = "";
+            Remarks.Text = "";
         }
     }
 }
