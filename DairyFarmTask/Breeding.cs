@@ -186,7 +186,7 @@ namespace DairyFarmTask
             {
                 try
                 {
-                    String Query = "UPDATE HealthTb set HeatDate = '" + HDate.Value.Date + "' , BreedDate = '" + BDate.Value.Date + "' , CowID = " + Cowid.SelectedValue.ToString() + " , CowName = '" + CowName.Text + "' , PregDate = '" + PDate.Value.Date + "' , ExpDateClave = '" + EDate.Value.Date + "' , DateClaved = '" + CDate.Value.Date + "' , CowAge = " + Age.Text + " , Remarks = '" + Remarks.Text + "' WHERE BrID = " + key;
+                    String Query = "UPDATE BreedTb set HeatDate = '" + HDate.Value.Date + "' , BreedDate = '" + BDate.Value.Date + "' , CowID = " + Cowid.SelectedValue.ToString() + " , CowName = '" + CowName.Text + "' , PregDate = '" + PDate.Value.Date + "' , ExpDateCalve = '" + EDate.Value.Date + "' , DateCalved = '" + CDate.Value.Date + "' , CowAge = " + Age.Text + " , Remarks = '" + Remarks.Text + "' WHERE BrID = " + key;
                     connection.SetData(Query);
                     MessageBox.Show("Updated Successfully!!!");
                     clear();
