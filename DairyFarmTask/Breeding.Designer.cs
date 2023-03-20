@@ -177,11 +177,11 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label13.Location = new System.Drawing.Point(855, 385);
+            this.label13.Location = new System.Drawing.Point(855, 388);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(137, 37);
+            this.label13.Size = new System.Drawing.Size(188, 37);
             this.label13.TabIndex = 124;
-            this.label13.Text = "Cows List";
+            this.label13.Text = "Breed Report";
             // 
             // Age
             // 
@@ -705,7 +705,7 @@
             this.CowList.DefaultCellStyle = dataGridViewCellStyle3;
             this.CowList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.CowList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
-            this.CowList.Location = new System.Drawing.Point(331, 425);
+            this.CowList.Location = new System.Drawing.Point(331, 432);
             this.CowList.MultiSelect = false;
             this.CowList.Name = "CowList";
             this.CowList.RowHeadersVisible = false;
