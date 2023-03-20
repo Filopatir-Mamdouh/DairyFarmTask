@@ -175,5 +175,28 @@ namespace DairyFarmTask
                 }
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Select a Row");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "UPDATE HealthTb set HeatDate = '" + HDate.Value.Date + "' , BreedDate = '" + BDate.Value.Date + "' , CowID = " + Cowid.SelectedValue.ToString() + " , CowName = '" + CowName.Text + "' , PregDate = '" + PDate.Value.Date + "' , ExpDateClave = '" + EDate.Value.Date + "' , DateClaved = '" + CDate.Value.Date + "' , CowAge = " + Age.Text + " , Remarks = '" + Remarks.Text + "' WHERE BrID = " + key;
+                    connection.SetData(Query);
+                    MessageBox.Show("Updated Successfully!!!");
+                    clear();
+                    ShowData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
