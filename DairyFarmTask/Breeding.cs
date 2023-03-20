@@ -16,7 +16,7 @@ namespace DairyFarmTask
         {
             InitializeComponent();
             FillCowId();
-            ShowData()
+            ShowData();
         }
 
         DatabaseConnection connection = new DatabaseConnection();
@@ -83,7 +83,15 @@ namespace DairyFarmTask
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (Cowid.SelectedIndex != -1)
+            {
+                String Query = "Select * From CowTb WHERE Cowid = " + Cowid.SelectedValue.ToString();
+                foreach (DataRow dr in connection.GetData(Query).Rows)
+                {
+                    CowName.Text = dr["CowName"].ToString();
+                    Age.Text = dr["Age"].ToString();
+                }
+            }
         }
     }
 }
