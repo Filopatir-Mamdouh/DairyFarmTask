@@ -120,7 +120,7 @@ namespace DairyFarmTask
             {
                 try
                 {
-                    String Query = "INSERT INTO HealthTb values(" + Cowid.SelectedValue.ToString() + " , '" + CowName.Text + "' , '" + Date.Value.Date + "' , '" + Event.Text + "' , '" + Diagnosis.Text + "' , " + Treatment.Text + " , " + Cost.Text + " , '"+VetName.Text+")";
+                    String Query = "INSERT INTO HealthTb values(" + Cowid.SelectedValue.ToString() + " , '" + CowName.Text + "' , '" + Date.Value.Date + "' , '" + Event.Text + "' , '" + Diagnosis.Text + "' , '" + Treatment.Text + "' , " + Cost.Text + " , '"+VetName.Text+"')";
                     connection.SetData(Query);
                     MessageBox.Show("Saved Successfully!!!");
                     clear();
