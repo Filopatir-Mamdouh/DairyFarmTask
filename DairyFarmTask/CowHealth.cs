@@ -192,7 +192,7 @@ namespace DairyFarmTask
             {
                 try
                 {
-                    String Query = "UPDATE HealthTb set Cowid = " + Convert.ToInt32(Cowid.Text) + " , CowName = '" + CowName.Text + "' , RepDate = '" + Date.Value.Date + "' , Event = '" + Event.Text + "' , Diagnosis =  '" + Diagnosis.Text + "' , Treatment = '" + Treatment.Text + "' , Cost = " + Convert.ToInt32(Cost.Text) + "' , VetName = '"+ VetName.Text +" WHERE RepId = " + key;
+                    String Query = "UPDATE HealthTb set Cowid = " + Convert.ToInt32(Cowid.Text) + " , CowName = '" + CowName.Text + "' , RepDate = '" + Date.Value.Date + "' , Event = '" + Event.Text + "' , Diagnosis =  '" + Diagnosis.Text + "' , Treatment = '" + Treatment.Text + "' , Cost = " + Convert.ToInt32(Cost.Text) + " , VetName = '"+ VetName.Text +"' WHERE RepId = " + key;
                     connection.SetData(Query);
                     MessageBox.Show("Updated Successfully!!!");
                     clear();
