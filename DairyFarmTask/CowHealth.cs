@@ -158,5 +158,28 @@ namespace DairyFarmTask
                 key = Convert.ToInt32(HealthList.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Select a Row");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "DELETE FROM HealthTb WHERE RepId = " + key;
+                    connection.SetData(Query);
+                    MessageBox.Show("Deleted Successfully!!!");
+                    clear();
+                    ShowData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
