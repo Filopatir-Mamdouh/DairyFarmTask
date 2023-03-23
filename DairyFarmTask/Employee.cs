@@ -37,12 +37,13 @@ namespace DairyFarmTask
             Name.Text = "";
             Phone.Text = "";
             Address.Text = "";
+            Pass.Text = "";
             key = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (Gender.SelectedIndex == -1 || Name.Text == "" || Phone.Text == "" || Address.Text == "")
+            if (Gender.SelectedIndex == -1 || Name.Text == "" || Phone.Text == "" || Address.Text == "" || Pass.Text == "")
             {
                 MessageBox.Show("Missing Information!!!");
             }
@@ -75,6 +76,7 @@ namespace DairyFarmTask
             Name.Text = EmpList.SelectedRows[0].Cells[1].Value.ToString();
             Phone.Text = EmpList.SelectedRows[0].Cells[4] .Value.ToString();
             Address.Text = EmpList.SelectedRows[0].Cells[5].Value.ToString();
+            Pass.Text = EmpList.SelectedRows[0].Cells[6].Value.ToString();
             DoB.Value = (DateTime)EmpList.SelectedRows[0].Cells[2].Value;
             if (Name.Text == "")
             {
@@ -119,7 +121,7 @@ namespace DairyFarmTask
             {
                 try
                 {
-                    String Query = "UPDATE EmpeeTb set EmpName = '" + Name.Text + "' , EmpDob = '" + DoB.Value.Date + "' , Gender = '" + Gender.SelectedItem.ToString() + "' , phone = " + Phone.Text + " , Address = '" + Address.Text + "' WHERE EmpID = " + key;
+                    String Query = "UPDATE EmpeeTb set EmpName = '" + Name.Text + "' , EmpDob = '" + DoB.Value.Date + "' , Gender = '" + Gender.SelectedItem.ToString() + "' , phone = " + Phone.Text + " , Address = '" + Address.Text + "' , EmpPass = "+ Pass.Text + "' WHERE EmpID = " + key;
                     connection.SetData(Query);
                     MessageBox.Show("Updated Successfully!!!");
                     clear();

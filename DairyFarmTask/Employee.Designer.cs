@@ -53,6 +53,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Name = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.Pass = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmpList)).BeginInit();
@@ -286,7 +288,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(1025, 201);
+            this.label4.Location = new System.Drawing.Point(1126, 217);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 38);
             this.label4.TabIndex = 102;
@@ -304,7 +306,7 @@
             this.Address.LineIdleColor = System.Drawing.Color.Gray;
             this.Address.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
             this.Address.LineThickness = 4;
-            this.Address.Location = new System.Drawing.Point(1032, 244);
+            this.Address.Location = new System.Drawing.Point(1133, 260);
             this.Address.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Address.Name = "Address";
             this.Address.Size = new System.Drawing.Size(191, 41);
@@ -316,7 +318,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(663, 201);
+            this.label8.Location = new System.Drawing.Point(493, 217);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(83, 38);
             this.label8.TabIndex = 100;
@@ -334,7 +336,7 @@
             this.Phone.LineIdleColor = System.Drawing.Color.Gray;
             this.Phone.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
             this.Phone.LineThickness = 4;
-            this.Phone.Location = new System.Drawing.Point(670, 244);
+            this.Phone.Location = new System.Drawing.Point(500, 260);
             this.Phone.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Phone.Name = "Phone";
             this.Phone.Size = new System.Drawing.Size(191, 41);
@@ -382,11 +384,43 @@
             this.Name.TabIndex = 117;
             this.Name.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label5.Location = new System.Drawing.Point(820, 217);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(119, 38);
+            this.label5.TabIndex = 119;
+            this.label5.Text = "Password";
+            // 
+            // Pass
+            // 
+            this.Pass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Pass.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Pass.HintForeColor = System.Drawing.Color.Empty;
+            this.Pass.HintText = "";
+            this.Pass.isPassword = false;
+            this.Pass.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.Pass.LineIdleColor = System.Drawing.Color.Gray;
+            this.Pass.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.Pass.LineThickness = 4;
+            this.Pass.Location = new System.Drawing.Point(827, 260);
+            this.Pass.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Pass.Name = "Pass";
+            this.Pass.Size = new System.Drawing.Size(191, 41);
+            this.Pass.TabIndex = 118;
+            this.Pass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1538, 983);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.Pass);
             this.Controls.Add(this.Name);
             this.Controls.Add(this.DoB);
             this.Controls.Add(this.label9);
@@ -406,6 +440,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Employee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employee";
             this.panel1.ResumeLayout(false);
@@ -442,5 +477,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuMaterialTextbox Name;
+        private System.Windows.Forms.Label label5;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox Pass;
     }
 }
