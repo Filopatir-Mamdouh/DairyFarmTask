@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,7 +8,9 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using static System.Windows.Forms.AxHost;
 
 namespace DairyFarmTask
@@ -170,9 +173,32 @@ namespace DairyFarmTask
             {
                 try
                 {
-                    String Query = "DELETE FROM BreedTb WHERE MilkSalesTb = " + key;
+                    String Query = "DELETE FROM MilkSalesTb WHERE Sid = " + key;
                     connection.SetData(Query);
                     MessageBox.Show("Deleted Successfully!!!");
+                    clear();
+                    ShowData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Select a Row");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "UPDATE MilkSalesTb set Date ='" + date.Value.Date + "' , Uprice = " + price.Text + " , ClientName =  '" + client.Text + "' , ClientPhone = " + phone.Text + " , EmpID = " + EmpID.SelectedValue.ToString() + " , Quantity = " + quantity.Text + " , Amount = " + Total.Text + "' WHERE Sid = " + key;
+                    connection.SetData(Query);
+                    MessageBox.Show("Updated Successfully!!!");
                     clear();
                     ShowData();
                 }
