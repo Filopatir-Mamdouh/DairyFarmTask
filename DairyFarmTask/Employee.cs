@@ -27,6 +27,14 @@ namespace DairyFarmTask
             EmpList.DataSource = connection.GetData(Query);
         }
 
+        private void clear()
+        {
+            Gender.SelectedIndex = -1;
+            Name.Text = "";
+            Phone.Text = "";
+            Address.Text = "";
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (Gender.SelectedIndex == -1 || Name.Text == "" || Phone.Text == "" || Address.Text == "")
