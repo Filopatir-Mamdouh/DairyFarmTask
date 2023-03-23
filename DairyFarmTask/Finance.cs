@@ -88,7 +88,7 @@ namespace DairyFarmTask
             {
                 try
                 {
-                    String Query = "INSERT INTO ExpTb values('" + date.Value.Date + "' , '" + purpose.SelectedItem.ToString() + "' , " + Amount.Text + " , " + EmpID.Text + ")";
+                    String Query = "INSERT INTO ExpTb values('" + date.Value.Date + "' , '" + purpose.SelectedItem.ToString() + "' , " + Amount.Text + " , 1 )";
                     connection.SetData(Query);
                     MessageBox.Show("Saved Successfully!!!");
                     clearexp();
