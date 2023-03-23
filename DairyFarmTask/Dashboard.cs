@@ -82,7 +82,9 @@ namespace DairyFarmTask
             string Query = "Select Count(Cowid) From CowTb";
             Cows.Text = connection.GetData(Query).Rows[0][0].ToString();
             Query = "Select SUM(TotalMilk) From Milktb";
-            Milk.Text = connection.GetData(Query).Rows[0][0].ToString();
+            Milk.Text = connection.GetData(Query).Rows[0][0].ToString() + "Litres" ;
+            Query = "Select Count(EmpID) From EmpeeTb";
+            EmpName.Text = connection.GetData(Query).Rows[0][0].ToString();
         }
         private void Dashboard_Load(object sender, EventArgs e)
         {
