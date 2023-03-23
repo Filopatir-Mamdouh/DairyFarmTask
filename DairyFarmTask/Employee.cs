@@ -49,7 +49,7 @@ namespace DairyFarmTask
             {
                 try
                 {
-                    String Query = "INSERT INTO EmpeeTb values('" + Name.Text + "' , '" + DoB.Value.Date + "' , '" + Gender.Text + "', '" + Phone.Text + " , '" + Address.Text + "')";
+                    String Query = "INSERT INTO EmpeeTb values('" + Name.Text + "' , '" + DoB.Value.Date + "' , '" + Gender.Text + "', " + Phone.Text + " , '" + Address.Text + "')";
                     connection.SetData(Query);
                     MessageBox.Show("Saved Successfully!!!");
                     clear();
@@ -71,10 +71,10 @@ namespace DairyFarmTask
         private void EmpList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             Gender.SelectedValue = EmpList.SelectedRows[0].Cells[3].Value.ToString();
-            Name.Text = EmpList.SelectedRows[0].Cells[4].Value.ToString();
-            Phone.Text = EmpList.SelectedRows[0].Cells[8].Value.ToString();
-            Address.Text = EmpList.SelectedRows[0].Cells[9].Value.ToString();
-            DoB.Value = (DateTime)EmpList.SelectedRows[0].Cells[1].Value;
+            Name.Text = EmpList.SelectedRows[0].Cells[1].Value.ToString();
+            Phone.Text = EmpList.SelectedRows[0].Cells[4].Value.ToString();
+            Address.Text = EmpList.SelectedRows[0].Cells[5].Value.ToString();
+            DoB.Value = (DateTime)EmpList.SelectedRows[2].Cells[1].Value;
             if (Name.Text == "")
             {
                 key = 0;
