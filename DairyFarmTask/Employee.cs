@@ -72,13 +72,13 @@ namespace DairyFarmTask
             Phone.Text = EmpList.SelectedRows[0].Cells[8].Value.ToString();
             Address.Text = EmpList.SelectedRows[0].Cells[9].Value.ToString();
             DoB.Value = (DateTime)EmpList.SelectedRows[0].Cells[1].Value;
-            if (CowName.Text == "")
+            if (Name.Text == "")
             {
                 key = 0;
             }
             else
             {
-                key = Convert.ToInt32(CowList.SelectedRows[0].Cells[0].Value.ToString());
+                key = Convert.ToInt32(EmpList.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
     }
