@@ -88,10 +88,10 @@ namespace DairyFarmTask
             {
                 try
                 {
-                    String Query = "INSERT INTO MilkTb values(" + Cowid.SelectedValue.ToString() + " , '" + CowName.Text + "' , " + AmMilk.Text + " , " + NoonMilk.Text + " , " + PmMilk.Text + " , " + TotalMilk.Text + " , '" + Date.Value.Date + "')";
+                    String Query = "INSERT INTO ExpTb values('" + date.Value.Date + "' , '" + purpose.SelectedItem.ToString() + "' , " + Amount.Text + " , " + EmpID.Text + ")";
                     connection.SetData(Query);
                     MessageBox.Show("Saved Successfully!!!");
-                    clear();
+                    clearexp();
                     ShowDataExp();
                 }
                 catch (Exception ex)
