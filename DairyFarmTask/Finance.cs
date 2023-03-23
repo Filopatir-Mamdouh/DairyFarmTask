@@ -17,6 +17,7 @@ namespace DairyFarmTask
         {
             InitializeComponent();
             ShowDataExp();
+            ShowDataInc();
         }
         private void label7_Click(object sender, EventArgs e)
         {
@@ -75,13 +76,19 @@ namespace DairyFarmTask
         private void ShowDataInc()
         {
             string Query = "Select * From IncTb";
-            ExpenList.DataSource = connection.GetData(Query);
+            IncList.DataSource = connection.GetData(Query);
         }
 
         private void clearexp()
         {
             purpose.SelectedIndex = -1;
             Amount.Text = "";
+        }
+
+        private void clearInc()
+        {
+            Type.SelectedIndex = -1;
+            IAmount.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
