@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Date = new Bunifu.Framework.UI.BunifuDatepicker();
             this.label18 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -66,7 +66,7 @@
             this.Date.ForeColor = System.Drawing.Color.White;
             this.Date.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.Date.FormatCustom = null;
-            this.Date.Location = new System.Drawing.Point(391, 246);
+            this.Date.Location = new System.Drawing.Point(827, 127);
             this.Date.Name = "Date";
             this.Date.Size = new System.Drawing.Size(191, 36);
             this.Date.TabIndex = 116;
@@ -87,7 +87,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label9.Location = new System.Drawing.Point(384, 201);
+            this.label9.Location = new System.Drawing.Point(820, 82);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(164, 38);
             this.label9.TabIndex = 115;
@@ -120,25 +120,25 @@
             this.HealthList.AllowUserToDeleteRows = false;
             this.HealthList.AllowUserToResizeColumns = false;
             this.HealthList.AllowUserToResizeRows = false;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.HealthList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.HealthList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.HealthList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.HealthList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.HealthList.ColumnHeadersHeight = 24;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.HealthList.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.HealthList.DefaultCellStyle = dataGridViewCellStyle18;
             this.HealthList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.HealthList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
             this.HealthList.Location = new System.Drawing.Point(331, 431);
@@ -181,7 +181,7 @@
             this.Cowid.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.Cowid.Location = new System.Drawing.Point(391, 120);
+            this.Cowid.Location = new System.Drawing.Point(1123, 129);
             this.Cowid.Name = "Cowid";
             this.Cowid.Size = new System.Drawing.Size(192, 29);
             this.Cowid.TabIndex = 113;
@@ -282,7 +282,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(1236, 73);
+            this.label4.Location = new System.Drawing.Point(1025, 201);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 38);
             this.label4.TabIndex = 102;
@@ -300,7 +300,7 @@
             this.Diagnosis.LineIdleColor = System.Drawing.Color.Gray;
             this.Diagnosis.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
             this.Diagnosis.LineThickness = 4;
-            this.Diagnosis.Location = new System.Drawing.Point(1243, 116);
+            this.Diagnosis.Location = new System.Drawing.Point(1032, 244);
             this.Diagnosis.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Diagnosis.Name = "Diagnosis";
             this.Diagnosis.Size = new System.Drawing.Size(191, 41);
@@ -312,7 +312,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(934, 73);
+            this.label8.Location = new System.Drawing.Point(663, 201);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(83, 38);
             this.label8.TabIndex = 100;
@@ -330,7 +330,7 @@
             this.Event.LineIdleColor = System.Drawing.Color.Gray;
             this.Event.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
             this.Event.LineThickness = 4;
-            this.Event.Location = new System.Drawing.Point(941, 116);
+            this.Event.Location = new System.Drawing.Point(670, 244);
             this.Event.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Event.Name = "Event";
             this.Event.Size = new System.Drawing.Size(191, 41);
@@ -342,7 +342,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(662, 73);
+            this.label3.Location = new System.Drawing.Point(491, 82);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 38);
             this.label3.TabIndex = 98;
@@ -361,7 +361,7 @@
             this.CowName.LineIdleColor = System.Drawing.Color.Gray;
             this.CowName.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
             this.CowName.LineThickness = 4;
-            this.CowName.Location = new System.Drawing.Point(669, 116);
+            this.CowName.Location = new System.Drawing.Point(498, 125);
             this.CowName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.CowName.Name = "CowName";
             this.CowName.Size = new System.Drawing.Size(191, 41);
@@ -373,7 +373,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(394, 73);
+            this.label2.Location = new System.Drawing.Point(1126, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 38);
             this.label2.TabIndex = 96;
