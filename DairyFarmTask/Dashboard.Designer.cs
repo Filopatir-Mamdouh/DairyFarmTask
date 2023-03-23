@@ -74,16 +74,16 @@
             this.label13 = new System.Windows.Forms.Label();
             this.guna2GradientPanel9 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
+            this.SaleDate = new System.Windows.Forms.Label();
+            this.ExpDate = new System.Windows.Forms.Label();
+            this.HightExp = new System.Windows.Forms.Label();
             this.EmpName = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
+            this.HighestSale = new System.Windows.Forms.Label();
+            this.Balance = new System.Windows.Forms.Label();
+            this.Income = new System.Windows.Forms.Label();
+            this.Expen = new System.Windows.Forms.Label();
+            this.Cows = new System.Windows.Forms.Label();
+            this.Milk = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel5.SuspendLayout();
@@ -445,7 +445,7 @@
             // guna2GradientPanel2
             // 
             this.guna2GradientPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel2.Controls.Add(this.label26);
+            this.guna2GradientPanel2.Controls.Add(this.Income);
             this.guna2GradientPanel2.Controls.Add(this.label4);
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.MediumSeaGreen;
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.DarkGray;
@@ -458,7 +458,7 @@
             // guna2GradientPanel3
             // 
             this.guna2GradientPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel3.Controls.Add(this.label27);
+            this.guna2GradientPanel3.Controls.Add(this.Expen);
             this.guna2GradientPanel3.Controls.Add(this.label8);
             this.guna2GradientPanel3.FillColor = System.Drawing.Color.LightSteelBlue;
             this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.DarkGray;
@@ -471,7 +471,7 @@
             // guna2GradientPanel4
             // 
             this.guna2GradientPanel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel4.Controls.Add(this.label25);
+            this.guna2GradientPanel4.Controls.Add(this.Balance);
             this.guna2GradientPanel4.Controls.Add(this.label9);
             this.guna2GradientPanel4.FillColor = System.Drawing.Color.Tomato;
             this.guna2GradientPanel4.FillColor2 = System.Drawing.Color.DarkGray;
@@ -541,7 +541,7 @@
             // guna2GradientPanel6
             // 
             this.guna2GradientPanel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel6.Controls.Add(this.label29);
+            this.guna2GradientPanel6.Controls.Add(this.Milk);
             this.guna2GradientPanel6.Controls.Add(this.label11);
             this.guna2GradientPanel6.FillColor = System.Drawing.Color.LightSteelBlue;
             this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.DarkGray;
@@ -565,7 +565,7 @@
             // guna2GradientPanel7
             // 
             this.guna2GradientPanel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel7.Controls.Add(this.label28);
+            this.guna2GradientPanel7.Controls.Add(this.Cows);
             this.guna2GradientPanel7.Controls.Add(this.label12);
             this.guna2GradientPanel7.FillColor = System.Drawing.Color.MediumSeaGreen;
             this.guna2GradientPanel7.FillColor2 = System.Drawing.Color.DarkGray;
@@ -589,8 +589,8 @@
             // guna2GradientPanel8
             // 
             this.guna2GradientPanel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel8.Controls.Add(this.label24);
-            this.guna2GradientPanel8.Controls.Add(this.label21);
+            this.guna2GradientPanel8.Controls.Add(this.HighestSale);
+            this.guna2GradientPanel8.Controls.Add(this.SaleDate);
             this.guna2GradientPanel8.Controls.Add(this.label13);
             this.guna2GradientPanel8.FillColor = System.Drawing.Color.DarkBlue;
             this.guna2GradientPanel8.FillColor2 = System.Drawing.Color.DarkGray;
@@ -614,8 +614,8 @@
             // guna2GradientPanel9
             // 
             this.guna2GradientPanel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel9.Controls.Add(this.label23);
-            this.guna2GradientPanel9.Controls.Add(this.label22);
+            this.guna2GradientPanel9.Controls.Add(this.HightExp);
+            this.guna2GradientPanel9.Controls.Add(this.ExpDate);
             this.guna2GradientPanel9.Controls.Add(this.label20);
             this.guna2GradientPanel9.FillColor = System.Drawing.Color.DarkMagenta;
             this.guna2GradientPanel9.FillColor2 = System.Drawing.Color.DarkGray;
@@ -636,115 +636,115 @@
             this.label20.TabIndex = 31;
             this.label20.Text = "Highest Expenditure";
             // 
-            // label21
+            // SaleDate
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.MintCream;
-            this.label21.Location = new System.Drawing.Point(124, 208);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(115, 32);
-            this.label21.TabIndex = 31;
-            this.label21.Text = "Sale Date";
+            this.SaleDate.AutoSize = true;
+            this.SaleDate.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaleDate.ForeColor = System.Drawing.Color.MintCream;
+            this.SaleDate.Location = new System.Drawing.Point(124, 208);
+            this.SaleDate.Name = "SaleDate";
+            this.SaleDate.Size = new System.Drawing.Size(115, 32);
+            this.SaleDate.TabIndex = 31;
+            this.SaleDate.Text = "Sale Date";
             // 
-            // label22
+            // ExpDate
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.MintCream;
-            this.label22.Location = new System.Drawing.Point(159, 208);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(108, 32);
-            this.label22.TabIndex = 32;
-            this.label22.Text = "Exp Date";
+            this.ExpDate.AutoSize = true;
+            this.ExpDate.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExpDate.ForeColor = System.Drawing.Color.MintCream;
+            this.ExpDate.Location = new System.Drawing.Point(159, 208);
+            this.ExpDate.Name = "ExpDate";
+            this.ExpDate.Size = new System.Drawing.Size(108, 32);
+            this.ExpDate.TabIndex = 32;
+            this.ExpDate.Text = "Exp Date";
             // 
-            // label23
+            // HightExp
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.MintCream;
-            this.label23.Location = new System.Drawing.Point(39, 112);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(38, 32);
-            this.label23.TabIndex = 33;
-            this.label23.Text = "Rs";
+            this.HightExp.AutoSize = true;
+            this.HightExp.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HightExp.ForeColor = System.Drawing.Color.MintCream;
+            this.HightExp.Location = new System.Drawing.Point(184, 112);
+            this.HightExp.Name = "HightExp";
+            this.HightExp.Size = new System.Drawing.Size(38, 32);
+            this.HightExp.TabIndex = 33;
+            this.HightExp.Text = "Rs";
             // 
             // EmpName
             // 
             this.EmpName.AutoSize = true;
             this.EmpName.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmpName.ForeColor = System.Drawing.Color.MintCream;
-            this.EmpName.Location = new System.Drawing.Point(60, 93);
+            this.EmpName.Location = new System.Drawing.Point(58, 80);
             this.EmpName.Name = "EmpName";
             this.EmpName.Size = new System.Drawing.Size(125, 32);
             this.EmpName.TabIndex = 32;
             this.EmpName.Text = "EmpName";
             // 
-            // label24
+            // HighestSale
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.MintCream;
-            this.label24.Location = new System.Drawing.Point(26, 112);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(38, 32);
-            this.label24.TabIndex = 34;
-            this.label24.Text = "Rs";
+            this.HighestSale.AutoSize = true;
+            this.HighestSale.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HighestSale.ForeColor = System.Drawing.Color.MintCream;
+            this.HighestSale.Location = new System.Drawing.Point(170, 112);
+            this.HighestSale.Name = "HighestSale";
+            this.HighestSale.Size = new System.Drawing.Size(38, 32);
+            this.HighestSale.TabIndex = 34;
+            this.HighestSale.Text = "Rs";
             // 
-            // label25
+            // Balance
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.MintCream;
-            this.label25.Location = new System.Drawing.Point(13, 70);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(38, 32);
-            this.label25.TabIndex = 34;
-            this.label25.Text = "Rs";
+            this.Balance.AutoSize = true;
+            this.Balance.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Balance.ForeColor = System.Drawing.Color.MintCream;
+            this.Balance.Location = new System.Drawing.Point(110, 67);
+            this.Balance.Name = "Balance";
+            this.Balance.Size = new System.Drawing.Size(38, 32);
+            this.Balance.TabIndex = 34;
+            this.Balance.Text = "Rs";
             // 
-            // label26
+            // Income
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.MintCream;
-            this.label26.Location = new System.Drawing.Point(15, 64);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(38, 32);
-            this.label26.TabIndex = 34;
-            this.label26.Text = "Rs";
+            this.Income.AutoSize = true;
+            this.Income.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Income.ForeColor = System.Drawing.Color.MintCream;
+            this.Income.Location = new System.Drawing.Point(80, 64);
+            this.Income.Name = "Income";
+            this.Income.Size = new System.Drawing.Size(38, 32);
+            this.Income.TabIndex = 34;
+            this.Income.Text = "Rs";
             // 
-            // label27
+            // Expen
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.MintCream;
-            this.label27.Location = new System.Drawing.Point(20, 64);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(38, 32);
-            this.label27.TabIndex = 34;
-            this.label27.Text = "Rs";
+            this.Expen.AutoSize = true;
+            this.Expen.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Expen.ForeColor = System.Drawing.Color.MintCream;
+            this.Expen.Location = new System.Drawing.Point(88, 64);
+            this.Expen.Name = "Expen";
+            this.Expen.Size = new System.Drawing.Size(38, 32);
+            this.Expen.TabIndex = 34;
+            this.Expen.Text = "Rs";
             // 
-            // label28
+            // Cows
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.MintCream;
-            this.label28.Location = new System.Drawing.Point(65, 76);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(67, 32);
-            this.label28.TabIndex = 34;
-            this.label28.Text = "Num";
+            this.Cows.AutoSize = true;
+            this.Cows.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cows.ForeColor = System.Drawing.Color.MintCream;
+            this.Cows.Location = new System.Drawing.Point(65, 76);
+            this.Cows.Name = "Cows";
+            this.Cows.Size = new System.Drawing.Size(67, 32);
+            this.Cows.TabIndex = 34;
+            this.Cows.Text = "Num";
             // 
-            // label29
+            // Milk
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.MintCream;
-            this.label29.Location = new System.Drawing.Point(83, 76);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(67, 32);
-            this.label29.TabIndex = 35;
-            this.label29.Text = "Num";
+            this.Milk.AutoSize = true;
+            this.Milk.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Milk.ForeColor = System.Drawing.Color.MintCream;
+            this.Milk.Location = new System.Drawing.Point(83, 76);
+            this.Milk.Name = "Milk";
+            this.Milk.Size = new System.Drawing.Size(67, 32);
+            this.Milk.TabIndex = 35;
+            this.Milk.Text = "Num";
             // 
             // Dashboard
             // 
@@ -855,17 +855,17 @@
         private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel8;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label SaleDate;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel9;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label HightExp;
+        private System.Windows.Forms.Label ExpDate;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label Balance;
+        private System.Windows.Forms.Label Expen;
+        private System.Windows.Forms.Label Income;
         private System.Windows.Forms.Label EmpName;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label Milk;
+        private System.Windows.Forms.Label Cows;
+        private System.Windows.Forms.Label HighestSale;
     }
 }

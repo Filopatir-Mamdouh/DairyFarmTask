@@ -63,5 +63,11 @@ namespace DairyFarmTask
         {
 
         }
+
+        DatabaseConnection connection = new DatabaseConnection();
+        private void finance()
+        {
+
+        }
     }
 }
