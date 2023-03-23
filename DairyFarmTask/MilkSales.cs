@@ -19,6 +19,8 @@ namespace DairyFarmTask
             FillEmpId();
         }
 
+        DatabaseConnection connection = new DatabaseConnection();
+
         private void label9_Click(object sender, EventArgs e)
         {
 
