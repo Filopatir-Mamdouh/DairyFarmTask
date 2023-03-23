@@ -649,7 +649,7 @@
             this.SaleDate.AutoSize = true;
             this.SaleDate.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaleDate.ForeColor = System.Drawing.Color.MintCream;
-            this.SaleDate.Location = new System.Drawing.Point(124, 208);
+            this.SaleDate.Location = new System.Drawing.Point(79, 208);
             this.SaleDate.Name = "SaleDate";
             this.SaleDate.Size = new System.Drawing.Size(115, 32);
             this.SaleDate.TabIndex = 31;
@@ -660,7 +660,7 @@
             this.ExpDate.AutoSize = true;
             this.ExpDate.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExpDate.ForeColor = System.Drawing.Color.MintCream;
-            this.ExpDate.Location = new System.Drawing.Point(159, 208);
+            this.ExpDate.Location = new System.Drawing.Point(99, 208);
             this.ExpDate.Name = "ExpDate";
             this.ExpDate.Size = new System.Drawing.Size(108, 32);
             this.ExpDate.TabIndex = 32;
@@ -671,7 +671,7 @@
             this.HightExp.AutoSize = true;
             this.HightExp.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HightExp.ForeColor = System.Drawing.Color.MintCream;
-            this.HightExp.Location = new System.Drawing.Point(184, 112);
+            this.HightExp.Location = new System.Drawing.Point(99, 112);
             this.HightExp.Name = "HightExp";
             this.HightExp.Size = new System.Drawing.Size(38, 32);
             this.HightExp.TabIndex = 33;
@@ -693,7 +693,7 @@
             this.HighestSale.AutoSize = true;
             this.HighestSale.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HighestSale.ForeColor = System.Drawing.Color.MintCream;
-            this.HighestSale.Location = new System.Drawing.Point(170, 112);
+            this.HighestSale.Location = new System.Drawing.Point(124, 112);
             this.HighestSale.Name = "HighestSale";
             this.HighestSale.Size = new System.Drawing.Size(38, 32);
             this.HighestSale.TabIndex = 34;

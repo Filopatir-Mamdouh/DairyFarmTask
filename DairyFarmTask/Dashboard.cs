@@ -90,11 +90,15 @@ namespace DairyFarmTask
         private void Highestvalue()
         {
             string Query = "Select Max(Amount) From MilkSalesTb";
-            HighestSale.Text = connection.GetData(Query).Rows[0][0].ToString();
-            Query = "Select Max(Date) From MilkSalesTb WHERE Amount = " + HighestSale.Text;
+            int sale = Convert.ToInt32(connection.GetData(Query).Rows[0][0].ToString());
+            HighestSale.Text += " " + sale;
+            Query = "Select Max(Date) From MilkSalesTb WHERE Amount = " + sale;
             SaleDate.Text = connection.GetData(Query).Rows[0][0].ToString();
             Query = "Select Max(ExpAmount) From ExpTb";
-            HightExp.Text = connection.GetData(Query).Rows[0][0].ToString();
+            int amount = Convert.ToInt32(connection.GetData(Query).Rows[0][0].ToString());
+            HightExp.Text += " " + amount;
+            Query = "Select Max(ExpDate) From ExpTb WHERE ExpAmount = " + amount;
+            ExpDate.Text = connection.GetData(Query).Rows[0][0].ToString();
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
