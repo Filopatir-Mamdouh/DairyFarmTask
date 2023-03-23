@@ -148,5 +148,10 @@ namespace DairyFarmTask
             string Query = "Select * From IncTB WHERE IncDate = '" + bunifuDatepicker3.Value.Date + "'";
             IncList.DataSource = connection.GetData(Query);
         }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            ShowDataExp();
+        }
     }
 }
