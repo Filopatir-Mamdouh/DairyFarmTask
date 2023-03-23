@@ -94,7 +94,7 @@ namespace DairyFarmTask
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (purpose.SelectedIndex == -1 || Amount.Text == "")
+            if (EmpID.SelectedIndex == -1 || purpose.SelectedIndex == -1 || Amount.Text == "")
             {
                 MessageBox.Show("Missing Information!!!");
             }
@@ -117,7 +117,7 @@ namespace DairyFarmTask
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (Type.SelectedIndex == -1 || IAmount.Text == "")
+            if (EmpID.SelectedIndex == -1 || Type.SelectedIndex == -1 || IAmount.Text == "")
             {
                 MessageBox.Show("Missing Information!!!");
             }
