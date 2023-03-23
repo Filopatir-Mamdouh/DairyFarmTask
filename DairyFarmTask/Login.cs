@@ -24,7 +24,17 @@ namespace DairyFarmTask
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if ( Role.SelectedIndex == -1 || Name.Text == "" || Pass.Text == "")
+            {
+                MessageBox.Show("Fill the Missing Data");
+            }
+            else
+            {
+                if (Role.SelectedIndex == 0 &&  Name.Text =="Admin" &&  Pass.Text == "admin")
+                {
 
+                }
+            }
         }
 
         private void label4_Click(object sender, EventArgs e)
