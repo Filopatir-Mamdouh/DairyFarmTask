@@ -20,6 +20,7 @@ namespace DairyFarmTask
         public Employee()
         {
             InitializeComponent();
+            ShowData();
         }
 
         DatabaseConnection connection = new DatabaseConnection();
