@@ -100,5 +100,15 @@ namespace DairyFarmTask
             string Query = "Select * From MilkSalesTb";
             SalesList.DataSource = connection.GetData(Query);
         }
+
+        private void clear()
+        {
+            EmpID.SelectedIndex = -1;
+            client.Text = "";
+            phone.Text = "";
+            price.Text = "";
+            quantity.Text = "";
+            Total.Text = "";
+        }
     }
 }
