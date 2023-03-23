@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Date = new Bunifu.Framework.UI.BunifuDatepicker();
             this.label18 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.VetName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.HealthList = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -47,16 +46,11 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.Cost = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.Diagnosis = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label8 = new System.Windows.Forms.Label();
             this.Event = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label3 = new System.Windows.Forms.Label();
-            this.Treatment = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.CowName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -93,30 +87,11 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label9.Location = new System.Drawing.Point(394, 198);
+            this.label9.Location = new System.Drawing.Point(384, 201);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(67, 38);
+            this.label9.Size = new System.Drawing.Size(164, 38);
             this.label9.TabIndex = 115;
-            this.label9.Text = "Date";
-            // 
-            // VetName
-            // 
-            this.VetName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.VetName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VetName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.VetName.HintForeColor = System.Drawing.Color.Empty;
-            this.VetName.HintText = "";
-            this.VetName.isPassword = false;
-            this.VetName.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.VetName.LineIdleColor = System.Drawing.Color.Gray;
-            this.VetName.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.VetName.LineThickness = 4;
-            this.VetName.Location = new System.Drawing.Point(1243, 241);
-            this.VetName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.VetName.Name = "VetName";
-            this.VetName.Size = new System.Drawing.Size(191, 41);
-            this.VetName.TabIndex = 95;
-            this.VetName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.label9.Text = "Date Of Birth";
             // 
             // panel1
             // 
@@ -145,25 +120,25 @@
             this.HealthList.AllowUserToDeleteRows = false;
             this.HealthList.AllowUserToResizeColumns = false;
             this.HealthList.AllowUserToResizeRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.HealthList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.HealthList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.HealthList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.HealthList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.HealthList.ColumnHeadersHeight = 24;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.HealthList.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.HealthList.DefaultCellStyle = dataGridViewCellStyle15;
             this.HealthList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.HealthList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
             this.HealthList.Location = new System.Drawing.Point(331, 431);
@@ -302,58 +277,6 @@
             this.label13.TabIndex = 108;
             this.label13.Text = "Employees List";
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label10.Location = new System.Drawing.Point(934, 198);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(211, 38);
-            this.label10.TabIndex = 107;
-            this.label10.Text = "Cost of Treatment";
-            // 
-            // Cost
-            // 
-            this.Cost.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Cost.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cost.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Cost.HintForeColor = System.Drawing.Color.Empty;
-            this.Cost.HintText = "";
-            this.Cost.isPassword = false;
-            this.Cost.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.Cost.LineIdleColor = System.Drawing.Color.Gray;
-            this.Cost.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.Cost.LineThickness = 4;
-            this.Cost.Location = new System.Drawing.Point(941, 241);
-            this.Cost.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.Cost.Name = "Cost";
-            this.Cost.Size = new System.Drawing.Size(191, 41);
-            this.Cost.TabIndex = 106;
-            this.Cost.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label11.Location = new System.Drawing.Point(667, 198);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(128, 38);
-            this.label11.TabIndex = 105;
-            this.label11.Text = "Treatment";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label12.Location = new System.Drawing.Point(1236, 198);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(121, 38);
-            this.label12.TabIndex = 103;
-            this.label12.Text = "Vet Name";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -361,9 +284,9 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label4.Location = new System.Drawing.Point(1236, 73);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 38);
+            this.label4.Size = new System.Drawing.Size(104, 38);
             this.label4.TabIndex = 102;
-            this.label4.Text = "Diagnosis";
+            this.label4.Text = "Address";
             // 
             // Diagnosis
             // 
@@ -391,9 +314,9 @@
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label8.Location = new System.Drawing.Point(934, 73);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(77, 38);
+            this.label8.Size = new System.Drawing.Size(83, 38);
             this.label8.TabIndex = 100;
-            this.label8.Text = "Event";
+            this.label8.Text = "Phone";
             // 
             // Event
             // 
@@ -421,28 +344,9 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label3.Location = new System.Drawing.Point(662, 73);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 38);
+            this.label3.Size = new System.Drawing.Size(78, 38);
             this.label3.TabIndex = 98;
-            this.label3.Text = "Cow Name";
-            // 
-            // Treatment
-            // 
-            this.Treatment.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Treatment.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Treatment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Treatment.HintForeColor = System.Drawing.Color.Empty;
-            this.Treatment.HintText = "";
-            this.Treatment.isPassword = false;
-            this.Treatment.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.Treatment.LineIdleColor = System.Drawing.Color.Gray;
-            this.Treatment.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.Treatment.LineThickness = 4;
-            this.Treatment.Location = new System.Drawing.Point(669, 241);
-            this.Treatment.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.Treatment.Name = "Treatment";
-            this.Treatment.Size = new System.Drawing.Size(191, 41);
-            this.Treatment.TabIndex = 104;
-            this.Treatment.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.label3.Text = "Name";
             // 
             // CowName
             // 
@@ -482,7 +386,6 @@
             this.ClientSize = new System.Drawing.Size(1538, 983);
             this.Controls.Add(this.Date);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.VetName);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.HealthList);
             this.Controls.Add(this.Cowid);
@@ -492,16 +395,11 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.Cost);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label12);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Diagnosis);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.Event);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.Treatment);
             this.Controls.Add(this.CowName);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -523,7 +421,6 @@
         private Bunifu.Framework.UI.BunifuDatepicker Date;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label9;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox VetName;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox8;
         private Guna.UI2.WinForms.Guna2DataGridView HealthList;
@@ -536,16 +433,11 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label10;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox Cost;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuMaterialTextbox Diagnosis;
         private System.Windows.Forms.Label label8;
         private Bunifu.Framework.UI.BunifuMaterialTextbox Event;
         private System.Windows.Forms.Label label3;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox Treatment;
         private Bunifu.Framework.UI.BunifuMaterialTextbox CowName;
         private System.Windows.Forms.Label label2;
     }
