@@ -67,7 +67,13 @@ namespace DairyFarmTask
         DatabaseConnection connection = new DatabaseConnection();
         private void finance()
         {
+            string Query = "Select SUM(IncAmt) From IncTB";
+            Income.Text = connection.GetData(Query).Rows[0][0].ToString();
+        }
 
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+            finance();
         }
     }
 }
