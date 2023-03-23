@@ -445,6 +445,7 @@
             // guna2GradientPanel2
             // 
             this.guna2GradientPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel2.BorderRadius = 8;
             this.guna2GradientPanel2.Controls.Add(this.Income);
             this.guna2GradientPanel2.Controls.Add(this.label4);
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.MediumSeaGreen;
@@ -458,6 +459,7 @@
             // guna2GradientPanel3
             // 
             this.guna2GradientPanel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel3.BorderRadius = 8;
             this.guna2GradientPanel3.Controls.Add(this.Expen);
             this.guna2GradientPanel3.Controls.Add(this.label8);
             this.guna2GradientPanel3.FillColor = System.Drawing.Color.LightSteelBlue;
@@ -471,6 +473,7 @@
             // guna2GradientPanel4
             // 
             this.guna2GradientPanel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel4.BorderRadius = 8;
             this.guna2GradientPanel4.Controls.Add(this.Balance);
             this.guna2GradientPanel4.Controls.Add(this.label9);
             this.guna2GradientPanel4.FillColor = System.Drawing.Color.Tomato;
@@ -517,6 +520,7 @@
             // guna2GradientPanel5
             // 
             this.guna2GradientPanel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel5.BorderRadius = 8;
             this.guna2GradientPanel5.Controls.Add(this.EmpName);
             this.guna2GradientPanel5.Controls.Add(this.label10);
             this.guna2GradientPanel5.FillColor = System.Drawing.Color.Tomato;
@@ -541,6 +545,7 @@
             // guna2GradientPanel6
             // 
             this.guna2GradientPanel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel6.BorderRadius = 8;
             this.guna2GradientPanel6.Controls.Add(this.Milk);
             this.guna2GradientPanel6.Controls.Add(this.label11);
             this.guna2GradientPanel6.FillColor = System.Drawing.Color.LightSteelBlue;
@@ -565,6 +570,7 @@
             // guna2GradientPanel7
             // 
             this.guna2GradientPanel7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel7.BorderRadius = 8;
             this.guna2GradientPanel7.Controls.Add(this.Cows);
             this.guna2GradientPanel7.Controls.Add(this.label12);
             this.guna2GradientPanel7.FillColor = System.Drawing.Color.MediumSeaGreen;
@@ -589,6 +595,7 @@
             // guna2GradientPanel8
             // 
             this.guna2GradientPanel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel8.BorderRadius = 8;
             this.guna2GradientPanel8.Controls.Add(this.HighestSale);
             this.guna2GradientPanel8.Controls.Add(this.SaleDate);
             this.guna2GradientPanel8.Controls.Add(this.label13);
@@ -614,6 +621,7 @@
             // guna2GradientPanel9
             // 
             this.guna2GradientPanel9.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel9.BorderRadius = 8;
             this.guna2GradientPanel9.Controls.Add(this.HightExp);
             this.guna2GradientPanel9.Controls.Add(this.ExpDate);
             this.guna2GradientPanel9.Controls.Add(this.label20);
