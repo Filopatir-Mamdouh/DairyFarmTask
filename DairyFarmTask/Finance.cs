@@ -139,7 +139,8 @@ namespace DairyFarmTask
 
         private void bunifuDatepicker1_onValueChanged(object sender, EventArgs e)
         {
-
+            string Query = "Select * From ExpTb WHERE ExpDate = '"+date.Value.Date+"'";
+            ExpenList.DataSource = connection.GetData(Query);
         }
     }
 }
