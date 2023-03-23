@@ -113,5 +113,28 @@ namespace DairyFarmTask
                 }
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (Type.SelectedIndex == -1 || IAmount.Text == "")
+            {
+                MessageBox.Show("Missing Information!!!");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "INSERT INTO IncTb values('" + IDate.Value.Date + "' , '" + Type.SelectedItem.ToString() + "' , " + IAmount.Text + " , 1 )";
+                    connection.SetData(Query);
+                    MessageBox.Show("Saved Successfully!!!");
+                    clearInc();
+                    ShowDataInc();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
