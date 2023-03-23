@@ -16,7 +16,7 @@ namespace DairyFarmTask
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Breeding());
+            Application.Run(new Employee());
         }
     }
 }
