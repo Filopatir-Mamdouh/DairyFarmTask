@@ -91,12 +91,15 @@ namespace DairyFarmTask
         {
             string Query = "Select Max(Amount) From MilkSaleTb";
             HighestSale.Text = connection.GetData(Query).Rows[0][0].ToString();
+            Query = "Select Max(EmpAmount) From ExpTb";
+            HightExp.Text = connection.GetData(Query).Rows[0][0].ToString();
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
             finance();
             logistic();
+            Highestvalue();
         }
     }
 }
