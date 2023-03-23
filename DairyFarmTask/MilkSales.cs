@@ -17,6 +17,7 @@ namespace DairyFarmTask
         {
             InitializeComponent();
             FillEmpId();
+            ShowData();
         }
 
         DatabaseConnection connection = new DatabaseConnection();
@@ -92,6 +93,12 @@ namespace DairyFarmTask
                 int total = Convert.ToInt32(quantity.Text) * Convert.ToInt32(price.Text);
                 Total.Text = "" + total;
             }
+        }
+
+        private void ShowData()
+        {
+            string Query = "Select * From MilkSalesTb";
+            SalesList.DataSource = connection.GetData(Query);
         }
     }
 }
