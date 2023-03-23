@@ -142,5 +142,11 @@ namespace DairyFarmTask
             string Query = "Select * From ExpTb WHERE ExpDate = '"+ bunifuDatepicker1.Value.Date+"'";
             ExpenList.DataSource = connection.GetData(Query);
         }
+
+        private void bunifuDatepicker3_onValueChanged(object sender, EventArgs e)
+        {
+            string Query = "Select * From IncTB WHERE IncDate = '" + bunifuDatepicker3.Value.Date + "'";
+            IncList.DataSource = connection.GetData(Query);
+        }
     }
 }
