@@ -33,6 +33,7 @@ namespace DairyFarmTask
             Name.Text = "";
             Phone.Text = "";
             Address.Text = "";
+            key = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -61,6 +62,16 @@ namespace DairyFarmTask
         private void button4_Click(object sender, EventArgs e)
         {
             clear();
+        }
+
+        int key = 0;
+        private void EmpList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Gender.SelectedValue = EmpList.SelectedRows[0].Cells[3].Value.ToString();
+            Name.Text = EmpList.SelectedRows[0].Cells[4].Value.ToString();
+            Phone.Text = EmpList.SelectedRows[0].Cells[8].Value.ToString();
+            Address.Text = EmpList.SelectedRows[0].Cells[9].Value.ToString();
+            DoB.Value = (DateTime)EmpList.SelectedRows[0].Cells[1].Value;
         }
     }
 }
