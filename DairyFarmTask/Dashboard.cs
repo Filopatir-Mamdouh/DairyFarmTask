@@ -68,7 +68,13 @@ namespace DairyFarmTask
         private void finance()
         {
             string Query = "Select SUM(IncAmt) From IncTB";
-            Income.Text = connection.GetData(Query).Rows[0][0].ToString();
+            int inc = Convert.ToInt32(connection.GetData(Query).Rows[0][0].ToString());
+            Income.Text += " " + inc;
+            Query = "Select SUM(ExpAmount) From ExpTb";
+            int exp = Convert.ToInt32(connection.GetData(Query).Rows[0][0].ToString());
+            Expen.Text += " " + exp;
+            int total =  inc - exp;
+            Balance.Text += " " + total;
         }
 
         private void Dashboard_Load(object sender, EventArgs e)

@@ -704,7 +704,7 @@
             this.Balance.AutoSize = true;
             this.Balance.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Balance.ForeColor = System.Drawing.Color.MintCream;
-            this.Balance.Location = new System.Drawing.Point(110, 67);
+            this.Balance.Location = new System.Drawing.Point(80, 67);
             this.Balance.Name = "Balance";
             this.Balance.Size = new System.Drawing.Size(38, 32);
             this.Balance.TabIndex = 34;
@@ -715,7 +715,7 @@
             this.Income.AutoSize = true;
             this.Income.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Income.ForeColor = System.Drawing.Color.MintCream;
-            this.Income.Location = new System.Drawing.Point(80, 64);
+            this.Income.Location = new System.Drawing.Point(53, 64);
             this.Income.Name = "Income";
             this.Income.Size = new System.Drawing.Size(38, 32);
             this.Income.TabIndex = 34;
@@ -726,7 +726,7 @@
             this.Expen.AutoSize = true;
             this.Expen.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Expen.ForeColor = System.Drawing.Color.MintCream;
-            this.Expen.Location = new System.Drawing.Point(88, 64);
+            this.Expen.Location = new System.Drawing.Point(35, 64);
             this.Expen.Name = "Expen";
             this.Expen.Size = new System.Drawing.Size(38, 32);
             this.Expen.TabIndex = 34;
