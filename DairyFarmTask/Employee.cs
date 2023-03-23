@@ -21,6 +21,12 @@ namespace DairyFarmTask
 
         DatabaseConnection connection = new DatabaseConnection();
 
+        private void ShowData()
+        {
+            string Query = "Select * From EmpeeTb";
+            EmpList.DataSource = connection.GetData(Query);
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (Gender.SelectedIndex == -1 || Name.Text == "" || Phone.Text == "" || Address.Text == "")
