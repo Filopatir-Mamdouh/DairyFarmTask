@@ -71,11 +71,11 @@ namespace DairyFarmTask
         int key = 0;
         private void EmpList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            Gender.SelectedValue = EmpList.SelectedRows[0].Cells[3].Value.ToString();
+            Gender.SelectedItem = EmpList.SelectedRows[0].Cells[3].Value.ToString();
             Name.Text = EmpList.SelectedRows[0].Cells[1].Value.ToString();
-            Phone.Text = EmpList.SelectedRows[0].Cells[4].Value.ToString();
+            Phone.Text = EmpList.SelectedRows[0].Cells[4] .Value.ToString();
             Address.Text = EmpList.SelectedRows[0].Cells[5].Value.ToString();
-            DoB.Value = (DateTime)EmpList.SelectedRows[2].Cells[1].Value;
+            DoB.Value = (DateTime)EmpList.SelectedRows[0].Cells[2].Value;
             if (Name.Text == "")
             {
                 key = 0;
@@ -119,7 +119,7 @@ namespace DairyFarmTask
             {
                 try
                 {
-                    String Query = "UPDATE EmpeeTb set EmpName = '" + Name.Text + "' , EmpDob = '" + DoB.Value.Date + "' , Gender = '" + Gender.SelectedValue.ToString() + "' , phone = " + Phone.Text + " , Address = '" + Address.Text + "' WHERE EmpID = " + key;
+                    String Query = "UPDATE EmpeeTb set EmpName = '" + Name.Text + "' , EmpDob = '" + DoB.Value.Date + "' , Gender = '" + Gender.SelectedItem.ToString() + "' , phone = " + Phone.Text + " , Address = '" + Address.Text + "' WHERE EmpID = " + key;
                     connection.SetData(Query);
                     MessageBox.Show("Updated Successfully!!!");
                     clear();

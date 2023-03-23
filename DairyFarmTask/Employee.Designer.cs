@@ -178,7 +178,6 @@
             this.Gender.BackColor = System.Drawing.SystemColors.ControlDark;
             this.Gender.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.Gender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Gender.FormattingEnabled = true;
             this.Gender.Items.AddRange(new object[] {
             "Male",
             "Female"});
