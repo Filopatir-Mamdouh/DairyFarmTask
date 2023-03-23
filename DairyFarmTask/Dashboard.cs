@@ -89,9 +89,9 @@ namespace DairyFarmTask
 
         private void Highestvalue()
         {
-            string Query = "Select Max(Amount) From MilkSaleTb";
+            string Query = "Select Max(Amount) From MilkSalesTb";
             HighestSale.Text = connection.GetData(Query).Rows[0][0].ToString();
-            Query = "Select Max(EmpAmount) From ExpTb";
+            Query = "Select Max(ExpAmount) From ExpTb";
             HightExp.Text = connection.GetData(Query).Rows[0][0].ToString();
         }
 
