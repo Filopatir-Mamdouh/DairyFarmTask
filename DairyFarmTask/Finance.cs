@@ -16,6 +16,7 @@ namespace DairyFarmTask
         public Finance()
         {
             InitializeComponent();
+            ShowDataExp();
         }
         private void label7_Click(object sender, EventArgs e)
         {
@@ -65,10 +66,16 @@ namespace DairyFarmTask
         }
         DatabaseConnection connection = new DatabaseConnection();
 
-        private void ShowData()
+        private void ShowDataExp()
         {
             string Query = "Select * From ExpTb";
             ExpenList.DataSource = connection.GetData(Query);
+        }
+
+        private void clearexp()
+        {
+            purpose.SelectedIndex = -1;
+            Amount.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -85,7 +92,7 @@ namespace DairyFarmTask
                     connection.SetData(Query);
                     MessageBox.Show("Saved Successfully!!!");
                     clear();
-                    ShowData();
+                    ShowDataExp();
                 }
                 catch (Exception ex)
                 {
