@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -61,6 +62,36 @@ namespace DairyFarmTask
             Cows cows = new Cows();
             this.Hide();
             cows.Show();
+        }
+        DatabaseConnection connection = new DatabaseConnection();
+
+        private void ShowData()
+        {
+            string Query = "Select * From ExpTb";
+            ExpenList.DataSource = connection.GetData(Query);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (purpose.SelectedIndex == -1 || Amount.Text == "")
+            {
+                MessageBox.Show("Missing Information!!!");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "INSERT INTO MilkTb values(" + Cowid.SelectedValue.ToString() + " , '" + CowName.Text + "' , " + AmMilk.Text + " , " + NoonMilk.Text + " , " + PmMilk.Text + " , " + TotalMilk.Text + " , '" + Date.Value.Date + "')";
+                    connection.SetData(Query);
+                    MessageBox.Show("Saved Successfully!!!");
+                    clear();
+                    ShowData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
