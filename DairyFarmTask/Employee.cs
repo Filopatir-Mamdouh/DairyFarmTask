@@ -51,7 +51,7 @@ namespace DairyFarmTask
             {
                 try
                 {
-                    String Query = "INSERT INTO EmpeeTb values('" + Name.Text + "' , '" + DoB.Value.Date + "' , '" + Gender.Text + "', " + Phone.Text + " , '" + Address.Text + "')";
+                    String Query = "INSERT INTO EmpeeTb values('" + Name.Text + "' , '" + DoB.Value.Date + "' , '" + Gender.Text + "', " + Phone.Text + " , '" + Address.Text + "' , '"+ Pass.Text +"')";
                     connection.SetData(Query);
                     MessageBox.Show("Saved Successfully!!!");
                     clear();
