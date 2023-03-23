@@ -77,6 +77,13 @@ namespace DairyFarmTask
             Balance.Text += " " + total;
         }
 
+        private void logistic()
+        {
+            string Query = "Select Count(Cowid) From CowTb";
+            Cows.Text = connection.GetData(Query).Rows[0][0].ToString();
+            Query = "Select SUM(ExpAmount) From ExpTb";
+            int exp = Convert.ToInt32(connection.GetData(Query).Rows[0][0].ToString());
+        }
         private void Dashboard_Load(object sender, EventArgs e)
         {
             finance();
