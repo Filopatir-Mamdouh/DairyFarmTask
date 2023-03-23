@@ -139,5 +139,25 @@ namespace DairyFarmTask
         {
             clear();
         }
+
+        int key = 0;
+        private void SalesList_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            EmpID.SelectedValue = SalesList.SelectedRows[0].Cells[5].Value.ToString();
+            client.Text = SalesList.SelectedRows[0].Cells[3].Value.ToString();
+            price.Text = SalesList.SelectedRows[0].Cells[2].Value.ToString();
+            phone.Text = SalesList.SelectedRows[0].Cells[4].Value.ToString();
+            quantity.Text = SalesList.SelectedRows[0].Cells[6].Value.ToString();
+            Total.Text = SalesList.SelectedRows[0].Cells[7].Value.ToString();
+            date.Value = (DateTime)SalesList.SelectedRows[0].Cells[1].Value;
+            if (EmpID.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(SalesList.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
     }
 }
