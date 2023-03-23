@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,7 @@ namespace DairyFarmTask
         public MilkSales()
         {
             InitializeComponent();
+            FillEmpId();
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -67,6 +69,13 @@ namespace DairyFarmTask
             Cows cows = new Cows();
             this.Hide();
             cows.Show();
+        }
+
+        private void FillEmpId()
+        {
+            String Query = "Select EmpID From EmpeeTb";
+            EmpID.ValueMember = "EmpID";
+            EmpID.DataSource = connection.GetData(Query);
         }
     }
 }
