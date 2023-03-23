@@ -72,6 +72,12 @@ namespace DairyFarmTask
             ExpenList.DataSource = connection.GetData(Query);
         }
 
+        private void ShowDataInc()
+        {
+            string Query = "Select * From IncTb";
+            ExpenList.DataSource = connection.GetData(Query);
+        }
+
         private void clearexp()
         {
             purpose.SelectedIndex = -1;
