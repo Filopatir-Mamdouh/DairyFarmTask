@@ -125,7 +125,7 @@ namespace DairyFarmTask
             {
                 try
                 {
-                    String Query = "INSERT INTO BreedTb values('" + date.Value.Date + "' , " + price.Text + " , '" + client.Text +"' , " + phone.Text + " , " + EmpID.SelectedValue.ToString() + " , " + quantity.Text + " , " + Total.Text + ")";
+                    String Query = "INSERT INTO MilkSalesTb values('" + date.Value.Date + "' , " + price.Text + " , '" + client.Text +"' , " + phone.Text + " , " + EmpID.SelectedValue.ToString() + " , " + quantity.Text + " , " + Total.Text + ")";
                     connection.SetData(Query);
                     MessageBox.Show("Saved Successfully!!!");
                     clear();
@@ -196,7 +196,7 @@ namespace DairyFarmTask
             {
                 try
                 {
-                    String Query = "UPDATE MilkSalesTb set Date ='" + date.Value.Date + "' , Uprice = " + price.Text + " , ClientName =  '" + client.Text + "' , ClientPhone = " + phone.Text + " , EmpID = " + EmpID.SelectedValue.ToString() + " , Quantity = " + quantity.Text + " , Amount = " + Total.Text + "' WHERE Sid = " + key;
+                    String Query = "UPDATE MilkSalesTb set Date ='" + date.Value.Date + "' , Uprice = " + price.Text + " , ClientName =  '" + client.Text + "' , ClientPhone = " + phone.Text + " , EmpID = " + EmpID.SelectedValue.ToString() + " , Quantity = " + quantity.Text + " , Amount = " + Total.Text + " WHERE Sid = " + key;
                     connection.SetData(Query);
                     MessageBox.Show("Updated Successfully!!!");
                     clear();
