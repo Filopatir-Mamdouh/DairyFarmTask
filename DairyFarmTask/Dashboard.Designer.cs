@@ -77,6 +77,13 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
+            this.EmpName = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel5.SuspendLayout();
@@ -438,6 +445,7 @@
             // guna2GradientPanel2
             // 
             this.guna2GradientPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel2.Controls.Add(this.label26);
             this.guna2GradientPanel2.Controls.Add(this.label4);
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.MediumSeaGreen;
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.DarkGray;
@@ -450,6 +458,7 @@
             // guna2GradientPanel3
             // 
             this.guna2GradientPanel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel3.Controls.Add(this.label27);
             this.guna2GradientPanel3.Controls.Add(this.label8);
             this.guna2GradientPanel3.FillColor = System.Drawing.Color.LightSteelBlue;
             this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.DarkGray;
@@ -462,6 +471,7 @@
             // guna2GradientPanel4
             // 
             this.guna2GradientPanel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel4.Controls.Add(this.label25);
             this.guna2GradientPanel4.Controls.Add(this.label9);
             this.guna2GradientPanel4.FillColor = System.Drawing.Color.Tomato;
             this.guna2GradientPanel4.FillColor2 = System.Drawing.Color.DarkGray;
@@ -507,6 +517,7 @@
             // guna2GradientPanel5
             // 
             this.guna2GradientPanel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel5.Controls.Add(this.EmpName);
             this.guna2GradientPanel5.Controls.Add(this.label10);
             this.guna2GradientPanel5.FillColor = System.Drawing.Color.Tomato;
             this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.DarkGray;
@@ -530,6 +541,7 @@
             // guna2GradientPanel6
             // 
             this.guna2GradientPanel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel6.Controls.Add(this.label29);
             this.guna2GradientPanel6.Controls.Add(this.label11);
             this.guna2GradientPanel6.FillColor = System.Drawing.Color.LightSteelBlue;
             this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.DarkGray;
@@ -553,6 +565,7 @@
             // guna2GradientPanel7
             // 
             this.guna2GradientPanel7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel7.Controls.Add(this.label28);
             this.guna2GradientPanel7.Controls.Add(this.label12);
             this.guna2GradientPanel7.FillColor = System.Drawing.Color.MediumSeaGreen;
             this.guna2GradientPanel7.FillColor2 = System.Drawing.Color.DarkGray;
@@ -576,9 +589,10 @@
             // guna2GradientPanel8
             // 
             this.guna2GradientPanel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel8.Controls.Add(this.label24);
             this.guna2GradientPanel8.Controls.Add(this.label21);
             this.guna2GradientPanel8.Controls.Add(this.label13);
-            this.guna2GradientPanel8.FillColor = System.Drawing.Color.Tomato;
+            this.guna2GradientPanel8.FillColor = System.Drawing.Color.DarkBlue;
             this.guna2GradientPanel8.FillColor2 = System.Drawing.Color.DarkGray;
             this.guna2GradientPanel8.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
             this.guna2GradientPanel8.Location = new System.Drawing.Point(477, 647);
@@ -603,7 +617,7 @@
             this.guna2GradientPanel9.Controls.Add(this.label23);
             this.guna2GradientPanel9.Controls.Add(this.label22);
             this.guna2GradientPanel9.Controls.Add(this.label20);
-            this.guna2GradientPanel9.FillColor = System.Drawing.Color.Tomato;
+            this.guna2GradientPanel9.FillColor = System.Drawing.Color.DarkMagenta;
             this.guna2GradientPanel9.FillColor2 = System.Drawing.Color.DarkGray;
             this.guna2GradientPanel9.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
             this.guna2GradientPanel9.Location = new System.Drawing.Point(1040, 647);
@@ -627,7 +641,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.MintCream;
-            this.label21.Location = new System.Drawing.Point(178, 208);
+            this.label21.Location = new System.Drawing.Point(124, 208);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(115, 32);
             this.label21.TabIndex = 31;
@@ -654,6 +668,83 @@
             this.label23.Size = new System.Drawing.Size(38, 32);
             this.label23.TabIndex = 33;
             this.label23.Text = "Rs";
+            // 
+            // EmpName
+            // 
+            this.EmpName.AutoSize = true;
+            this.EmpName.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmpName.ForeColor = System.Drawing.Color.MintCream;
+            this.EmpName.Location = new System.Drawing.Point(60, 93);
+            this.EmpName.Name = "EmpName";
+            this.EmpName.Size = new System.Drawing.Size(125, 32);
+            this.EmpName.TabIndex = 32;
+            this.EmpName.Text = "EmpName";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.MintCream;
+            this.label24.Location = new System.Drawing.Point(26, 112);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(38, 32);
+            this.label24.TabIndex = 34;
+            this.label24.Text = "Rs";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.MintCream;
+            this.label25.Location = new System.Drawing.Point(13, 70);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(38, 32);
+            this.label25.TabIndex = 34;
+            this.label25.Text = "Rs";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.MintCream;
+            this.label26.Location = new System.Drawing.Point(15, 64);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(38, 32);
+            this.label26.TabIndex = 34;
+            this.label26.Text = "Rs";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.MintCream;
+            this.label27.Location = new System.Drawing.Point(20, 64);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(38, 32);
+            this.label27.TabIndex = 34;
+            this.label27.Text = "Rs";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.MintCream;
+            this.label28.Location = new System.Drawing.Point(65, 76);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(67, 32);
+            this.label28.TabIndex = 34;
+            this.label28.Text = "Num";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.MintCream;
+            this.label29.Location = new System.Drawing.Point(83, 76);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(67, 32);
+            this.label29.TabIndex = 35;
+            this.label29.Text = "Num";
             // 
             // Dashboard
             // 
@@ -769,5 +860,12 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label EmpName;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label24;
     }
 }
