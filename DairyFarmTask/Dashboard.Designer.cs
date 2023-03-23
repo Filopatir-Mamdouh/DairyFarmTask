@@ -748,7 +748,7 @@
             this.Milk.AutoSize = true;
             this.Milk.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Milk.ForeColor = System.Drawing.Color.MintCream;
-            this.Milk.Location = new System.Drawing.Point(83, 76);
+            this.Milk.Location = new System.Drawing.Point(27, 76);
             this.Milk.Name = "Milk";
             this.Milk.Size = new System.Drawing.Size(67, 32);
             this.Milk.TabIndex = 35;

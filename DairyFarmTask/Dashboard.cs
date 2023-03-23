@@ -86,6 +86,13 @@ namespace DairyFarmTask
             Query = "Select Count(EmpID) From EmpeeTb";
             EmpName.Text = connection.GetData(Query).Rows[0][0].ToString();
         }
+
+        private void Highestvalue()
+        {
+            string Query = "Select Max(Amount) From MilkSaleTb";
+            HighestSale.Text = connection.GetData(Query).Rows[0][0].ToString();
+        }
+
         private void Dashboard_Load(object sender, EventArgs e)
         {
             finance();
