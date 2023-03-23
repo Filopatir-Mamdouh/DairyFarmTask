@@ -18,6 +18,7 @@ namespace DairyFarmTask
             InitializeComponent();
             ShowDataExp();
             ShowDataInc();
+            FillEmpId();
         }
         private void label7_Click(object sender, EventArgs e)
         {
@@ -101,7 +102,7 @@ namespace DairyFarmTask
             {
                 try
                 {
-                    String Query = "INSERT INTO ExpTb values('" + date.Value.Date + "' , '" + purpose.SelectedItem.ToString() + "' , " + Amount.Text + " , 1 )";
+                    String Query = "INSERT INTO ExpTb values('" + date.Value.Date + "' , '" + purpose.SelectedItem.ToString() + "' , " + Amount.Text + " , "+ EmpID.SelectedValue +" )";
                     connection.SetData(Query);
                     MessageBox.Show("Saved Successfully!!!");
                     clearexp();
@@ -124,7 +125,7 @@ namespace DairyFarmTask
             {
                 try
                 {
-                    String Query = "INSERT INTO IncTB values('" + IDate.Value.Date + "' , '" + Type.SelectedItem.ToString() + "' , " + IAmount.Text + " , 1 )";
+                    String Query = "INSERT INTO IncTB values('" + IDate.Value.Date + "' , '" + Type.SelectedItem.ToString() + "' , " + IAmount.Text + " , "+ EmpID.SelectedValue +")";
                     connection.SetData(Query);
                     MessageBox.Show("Saved Successfully!!!");
                     clearInc();
@@ -157,6 +158,13 @@ namespace DairyFarmTask
         private void pictureBox10_Click(object sender, EventArgs e)
         {
             ShowDataInc();
+        }
+
+        private void FillEmpId()
+        {
+            String Query = "Select EmpID From EmpeeTb";
+            EmpID.ValueMember = "EmpID";
+            EmpID.DataSource = connection.GetData(Query);
         }
     }
 }
