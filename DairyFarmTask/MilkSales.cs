@@ -8,6 +8,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.AxHost;
 
 namespace DairyFarmTask
 {
@@ -109,6 +110,29 @@ namespace DairyFarmTask
             price.Text = "";
             quantity.Text = "";
             Total.Text = "";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (EmpID.SelectedIndex == -1 || client.Text == "" || phone.Text == "" || price.Text == "" || quantity.Text == "" || Total.Text == "")
+            {
+                MessageBox.Show("Missing Information!!!");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "INSERT INTO BreedTb values('" + date.Value.Date + "' , " + price.Text + " , '" + client.Text +"' , " + phone.Text + " , " + EmpID.SelectedValue.ToString() + " , " + quantity.Text + " , " + Total.Text + ")";
+                    connection.SetData(Query);
+                    MessageBox.Show("Saved Successfully!!!");
+                    clear();
+                    ShowData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
