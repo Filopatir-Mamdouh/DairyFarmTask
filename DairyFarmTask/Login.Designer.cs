@@ -158,7 +158,7 @@
             this.Role.FormattingEnabled = true;
             this.Role.Items.AddRange(new object[] {
             "Admin",
-            "Employer"});
+            "Employee"});
             this.Role.Location = new System.Drawing.Point(414, 174);
             this.Role.Name = "Role";
             this.Role.Size = new System.Drawing.Size(232, 33);

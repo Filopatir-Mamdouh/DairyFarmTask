@@ -36,8 +36,8 @@ namespace DairyFarmTask
                     this.Hide();
                     emp.Show();
                 }
-                else{
-                    string query = "SELECT count(*) From EmpyeeTb WHERE EmpName = '" + Name.Text + "' , EmpPass = '" + Pass.Text + "'";
+                else {
+                    string query = "SELECT count(*) From EmpeeTb WHERE EmpName = '" + Name.Text + "' AND EmpPass = '" + Pass.Text + "'";
                     if (Convert.ToInt32(con.GetData(query).Rows[0][0].ToString()) >= 1)
                     {
                         Cows cow = new Cows();
