@@ -115,6 +115,11 @@ namespace DairyFarmTask
             Total.Text = "";
         }
 
+        private void SaveTransaction()
+        {
+            String Query = "INSERT INTO IncTB values('" + date.Value.Date + "' , 'Sales' , " + Total.Text + " , " + EmpID.SelectedValue.ToString() + ")";
+            connection.SetData(Query);
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             if (EmpID.SelectedIndex == -1 || client.Text == "" || phone.Text == "" || price.Text == "" || quantity.Text == "" || Total.Text == "")
@@ -127,6 +132,7 @@ namespace DairyFarmTask
                 {
                     String Query = "INSERT INTO MilkSalesTb values('" + date.Value.Date + "' , " + price.Text + " , '" + client.Text +"' , " + phone.Text + " , " + EmpID.SelectedValue.ToString() + " , " + quantity.Text + " , " + Total.Text + ")";
                     connection.SetData(Query);
+                    SaveTransaction();
                     MessageBox.Show("Saved Successfully!!!");
                     clear();
                     ShowData();

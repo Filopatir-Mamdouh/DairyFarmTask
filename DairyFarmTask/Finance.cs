@@ -75,7 +75,7 @@ namespace DairyFarmTask
 
         private void ShowDataInc()
         {
-            string Query = "Select * From IncTb";
+            string Query = "Select * From IncTB";
             IncList.DataSource = connection.GetData(Query);
         }
 
@@ -124,7 +124,7 @@ namespace DairyFarmTask
             {
                 try
                 {
-                    String Query = "INSERT INTO IncTb values('" + IDate.Value.Date + "' , '" + Type.SelectedItem.ToString() + "' , " + IAmount.Text + " , 1 )";
+                    String Query = "INSERT INTO IncTB values('" + IDate.Value.Date + "' , '" + Type.SelectedItem.ToString() + "' , " + IAmount.Text + " , 1 )";
                     connection.SetData(Query);
                     MessageBox.Show("Saved Successfully!!!");
                     clearInc();
@@ -135,6 +135,11 @@ namespace DairyFarmTask
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void bunifuDatepicker1_onValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
