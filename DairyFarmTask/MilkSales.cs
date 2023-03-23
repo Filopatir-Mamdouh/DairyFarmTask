@@ -79,5 +79,19 @@ namespace DairyFarmTask
             EmpID.ValueMember = "EmpID";
             EmpID.DataSource = connection.GetData(Query);
         }
+
+        private void MilkSales_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void quantity_OnValueChanged(object sender, EventArgs e)
+        {
+            if (quantity.Text != "")
+            {
+                int total = Convert.ToInt32(quantity.Text) * Convert.ToInt32(price.Text);
+                Total.Text = "" + total;
+            }
+        }
     }
 }

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -182,26 +182,26 @@
             // 
             // SalesList
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.SalesList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.SalesList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            this.SalesList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.SalesList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.SalesList.ColumnHeadersHeight = 4;
             this.SalesList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.SalesList.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.SalesList.DefaultCellStyle = dataGridViewCellStyle12;
             this.SalesList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.SalesList.Location = new System.Drawing.Point(331, 427);
             this.SalesList.Name = "SalesList";
@@ -517,13 +517,14 @@
             this.quantity.Size = new System.Drawing.Size(191, 41);
             this.quantity.TabIndex = 102;
             this.quantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.quantity.OnValueChanged += new System.EventHandler(this.quantity_OnValueChanged);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label11.Location = new System.Drawing.Point(556, 200);
+            this.label11.Location = new System.Drawing.Point(1256, 73);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(156, 38);
             this.label11.TabIndex = 101;
@@ -541,7 +542,7 @@
             this.phone.LineIdleColor = System.Drawing.Color.Gray;
             this.phone.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
             this.phone.LineThickness = 4;
-            this.phone.Location = new System.Drawing.Point(563, 243);
+            this.phone.Location = new System.Drawing.Point(1263, 116);
             this.phone.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.phone.Name = "phone";
             this.phone.Size = new System.Drawing.Size(191, 41);
@@ -564,7 +565,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(1244, 73);
+            this.label4.Location = new System.Drawing.Point(998, 73);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 38);
             this.label4.TabIndex = 98;
@@ -582,7 +583,7 @@
             this.client.LineIdleColor = System.Drawing.Color.Gray;
             this.client.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
             this.client.LineThickness = 4;
-            this.client.Location = new System.Drawing.Point(1251, 116);
+            this.client.Location = new System.Drawing.Point(1005, 116);
             this.client.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.client.Name = "client";
             this.client.Size = new System.Drawing.Size(191, 41);
@@ -594,7 +595,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(962, 73);
+            this.label3.Location = new System.Drawing.Point(548, 200);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 38);
             this.label3.TabIndex = 94;
@@ -612,7 +613,7 @@
             this.price.LineIdleColor = System.Drawing.Color.Gray;
             this.price.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
             this.price.LineThickness = 4;
-            this.price.Location = new System.Drawing.Point(969, 116);
+            this.price.Location = new System.Drawing.Point(555, 243);
             this.price.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.price.Name = "price";
             this.price.Size = new System.Drawing.Size(191, 41);
@@ -697,6 +698,7 @@
             this.Name = "MilkSales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MilkSales";
+            this.Load += new System.EventHandler(this.MilkSales_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
