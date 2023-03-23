@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,7 +8,9 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using static System.Windows.Forms.AxHost;
 
 namespace DairyFarmTask
@@ -105,6 +108,27 @@ namespace DairyFarmTask
             }
         }
 
-
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Select a Row");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "UPDATE EmpeeTb set EmpName = '" + Name.Text + "' , EmpDob = '" + DoB.Value.Date + "' , Gender = '" + Gender.SelectedValue.ToString() + "' , phone = " + Phone.Text + " , Address = '" + Address.Text + "' WHERE EmpID = " + key;
+                    connection.SetData(Query);
+                    MessageBox.Show("Updated Successfully!!!");
+                    clear();
+                    ShowData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
