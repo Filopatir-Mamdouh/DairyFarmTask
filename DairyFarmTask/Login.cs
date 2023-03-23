@@ -16,7 +16,7 @@ namespace DairyFarmTask
         {
             InitializeComponent();
         }
-
+        DatabaseConnection con = new DatabaseConnection();
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -32,7 +32,22 @@ namespace DairyFarmTask
             {
                 if (Role.SelectedIndex == 0 &&  Name.Text =="Admin" &&  Pass.Text == "admin")
                 {
-
+                    Employee emp = new Employee();
+                    this.Hide();
+                    emp.Show();
+                }
+                else{
+                    string query = "SELECT count(*) From EmpyeeTb WHERE EmpName = '" + Name.Text + "' , EmpPass = '" + Pass.Text + "'";
+                    if (Convert.ToInt32(con.GetData(query).Rows[0][0].ToString()) >= 1)
+                    {
+                        Cows cow = new Cows();
+                        this.Hide();
+                        cow.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect username or password");
+                    }
                 }
             }
         }
