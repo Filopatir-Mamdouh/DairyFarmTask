@@ -425,6 +425,10 @@
             // 
             // ExpenList
             // 
+            this.ExpenList.AllowUserToAddRows = false;
+            this.ExpenList.AllowUserToDeleteRows = false;
+            this.ExpenList.AllowUserToResizeColumns = false;
+            this.ExpenList.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.ExpenList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -435,8 +439,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.ExpenList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.ExpenList.ColumnHeadersHeight = 4;
-            this.ExpenList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.ExpenList.ColumnHeadersHeight = 24;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8F);
@@ -445,12 +448,17 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.ExpenList.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ExpenList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.ExpenList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ExpenList.Location = new System.Drawing.Point(354, 49);
+            this.ExpenList.MultiSelect = false;
             this.ExpenList.Name = "ExpenList";
             this.ExpenList.RowHeadersVisible = false;
+            this.ExpenList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.ExpenList.ShowCellToolTips = false;
+            this.ExpenList.ShowEditingIcon = false;
             this.ExpenList.Size = new System.Drawing.Size(713, 356);
-            this.ExpenList.TabIndex = 153;
+            this.ExpenList.TabIndex = 89;
             this.ExpenList.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.ExpenList.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.ExpenList.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
@@ -462,8 +470,8 @@
             this.ExpenList.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.ExpenList.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tahoma", 8F);
             this.ExpenList.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.ExpenList.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.ExpenList.ThemeStyle.HeaderStyle.Height = 4;
+            this.ExpenList.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.ExpenList.ThemeStyle.HeaderStyle.Height = 24;
             this.ExpenList.ThemeStyle.ReadOnly = false;
             this.ExpenList.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.ExpenList.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
