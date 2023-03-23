@@ -26,5 +26,11 @@ namespace DairyFarmTask
         {
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Name.Text = "";
+            Pass.Text = "";
+        }
     }
 }
