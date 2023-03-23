@@ -73,6 +73,8 @@
             this.price = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
             this.date = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.EmpID = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
@@ -562,7 +564,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(1171, 75);
+            this.label4.Location = new System.Drawing.Point(1244, 73);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 38);
             this.label4.TabIndex = 98;
@@ -580,7 +582,7 @@
             this.client.LineIdleColor = System.Drawing.Color.Gray;
             this.client.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
             this.client.LineThickness = 4;
-            this.client.Location = new System.Drawing.Point(1178, 118);
+            this.client.Location = new System.Drawing.Point(1251, 116);
             this.client.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.client.Name = "client";
             this.client.Size = new System.Drawing.Size(191, 41);
@@ -592,7 +594,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(855, 75);
+            this.label3.Location = new System.Drawing.Point(962, 73);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 38);
             this.label3.TabIndex = 94;
@@ -610,7 +612,7 @@
             this.price.LineIdleColor = System.Drawing.Color.Gray;
             this.price.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
             this.price.LineThickness = 4;
-            this.price.Location = new System.Drawing.Point(862, 118);
+            this.price.Location = new System.Drawing.Point(969, 116);
             this.price.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.price.Name = "price";
             this.price.Size = new System.Drawing.Size(191, 41);
@@ -623,7 +625,7 @@
             this.label2.BackColor = System.Drawing.SystemColors.Control;
             this.label2.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(498, 75);
+            this.label2.Location = new System.Drawing.Point(679, 73);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 38);
             this.label2.TabIndex = 92;
@@ -636,17 +638,41 @@
             this.date.ForeColor = System.Drawing.Color.White;
             this.date.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.date.FormatCustom = null;
-            this.date.Location = new System.Drawing.Point(505, 123);
+            this.date.Location = new System.Drawing.Point(686, 121);
             this.date.Name = "date";
             this.date.Size = new System.Drawing.Size(191, 36);
             this.date.TabIndex = 109;
             this.date.Value = new System.DateTime(2023, 3, 9, 5, 32, 14, 536);
+            // 
+            // EmpID
+            // 
+            this.EmpID.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.EmpID.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.EmpID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.EmpID.FormattingEnabled = true;
+            this.EmpID.Location = new System.Drawing.Point(383, 128);
+            this.EmpID.Name = "EmpID";
+            this.EmpID.Size = new System.Drawing.Size(192, 29);
+            this.EmpID.TabIndex = 135;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label9.Location = new System.Drawing.Point(376, 73);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(154, 38);
+            this.label9.TabIndex = 134;
+            this.label9.Text = "Empolyee ID";
             // 
             // MilkSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1538, 983);
+            this.Controls.Add(this.EmpID);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.date);
             this.Controls.Add(this.Total);
             this.Controls.Add(this.guna2DataGridView1);
@@ -741,5 +767,7 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox price;
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuDatepicker date;
+        private System.Windows.Forms.ComboBox EmpID;
+        private System.Windows.Forms.Label label9;
     }
 }
