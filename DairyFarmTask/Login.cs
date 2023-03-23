@@ -57,5 +57,10 @@ namespace DairyFarmTask
             Name.Text = "";
             Pass.Text = "";
         }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

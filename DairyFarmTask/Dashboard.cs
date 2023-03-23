@@ -107,5 +107,10 @@ namespace DairyFarmTask
             logistic();
             Highestvalue();
         }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

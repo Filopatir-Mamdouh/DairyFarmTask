@@ -55,10 +55,12 @@
             this.Name = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label5 = new System.Windows.Forms.Label();
             this.Pass = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmpList)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // DoB
@@ -101,9 +103,9 @@
             this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Controls.Add(this.label18);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 54);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(318, 929);
+            this.panel1.Size = new System.Drawing.Size(318, 983);
             this.panel1.TabIndex = 93;
             // 
             // pictureBox8
@@ -201,12 +203,12 @@
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.guna2GradientPanel1.Controls.Add(this.pictureBox11);
             this.guna2GradientPanel1.Controls.Add(this.label19);
             this.guna2GradientPanel1.Controls.Add(this.label1);
-            this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(318, 0);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(1538, 54);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(1220, 54);
             this.guna2GradientPanel1.TabIndex = 94;
             // 
             // label19
@@ -214,7 +216,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.DimGray;
-            this.label19.Location = new System.Drawing.Point(1279, 12);
+            this.label19.Location = new System.Drawing.Point(589, 9);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(136, 32);
             this.label19.TabIndex = 28;
@@ -414,6 +416,18 @@
             this.Pass.TabIndex = 118;
             this.Pass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox11.Image = global::DairyFarmTask.Properties.Resources.icons8_close_window_50;
+            this.pictureBox11.Location = new System.Drawing.Point(1086, 12);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(51, 34);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 161;
+            this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -449,6 +463,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.EmpList)).EndInit();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -479,5 +494,6 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox Name;
         private System.Windows.Forms.Label label5;
         private Bunifu.Framework.UI.BunifuMaterialTextbox Pass;
+        private System.Windows.Forms.PictureBox pictureBox11;
     }
 }
